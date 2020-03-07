@@ -94,3 +94,23 @@
 .album{
   min-height: 600px;
 }
+
+.search-result-row{
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.green{
+  color: #0c5f06;
+}
+
+.search-body{
+  height: 75px;
+}
+
+.mb-0{
+  margin-bottom: 0px;
+}

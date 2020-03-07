@@ -85,10 +85,7 @@
                             <i class="fa fa-search-plus"></i>
                             Search & Find 
                         </a>
-                        <a class="nav-item" href="mulago.html">Mulago</a>
-                        <a class="nav-item" href="kirudu.html">Kirudu</a>
-                        <a class="nav-item" href="kasuubi.html">Kasuubi</a>
-                        <a class="nav-item" href="namuwongo.html">Namuwongo</a>
+                        <a class="nav-item" v-for="menu_link in menu_links" :href="menu_link.link">{{menu_link.title}}</a>
                       </span>
                 </div>
                 
@@ -155,6 +152,7 @@
                 </div>
             </div>
 
+
         </main>
 
         <footer class="text-muted bg-dark">
@@ -177,6 +175,7 @@
         integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="page_data.js"></script>
     <script src="common_medical_services.js"></script>
     <script src="index.js"></script>
 </body>

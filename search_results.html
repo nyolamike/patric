@@ -82,10 +82,7 @@
                     
                       <span class="navbar-text">
                         <a class="nav-item active" href="index.html">Search & Find </a>
-                        <a class="nav-item" href="mulago.html">Mulago</a>
-                        <a class="nav-item" href="kirudu.html">Kirudu</a>
-                        <a class="nav-item" href="kasuubi.html">Kasuubi</a>
-                        <a class="nav-item" href="namuwongo.html">Namuwongo</a>
+                        <a class="nav-item" v-for="menu_link in menu_links" :href="menu_link.link">{{menu_link.title}}</a>
                       </span>
                 </div>
                 
@@ -127,7 +124,25 @@
                     <div v-if="results.length > 1" class="text-center"> <h5> We found over {{results.length}} results for your search</h5> <br/></div>
                     <div class="row">
                         <div class="col-md-12" >
-                            
+                            <div class="row search-result-row" v-for="result in results" @click="gotoresult(result)">
+                                <div class="col-md-3 col-sm-12" >
+                                    <img :src="result.image" class="search-service-image">
+                                </div>
+                                <div class="col-md-9 col-sm-12" >
+                                    <b><h4>{{result.title}}</h4></b>
+                                    <p class="search-body">
+                                        {{result.body}}
+                                    </p>
+                                    <p class="mb-0">
+                                        Hospital: <span class="green"><strong>{{result.hospital}}</strong></span>
+                                        &nbsp;&nbsp;&nbsp;
+                                        Department: <span class="green"><strong>{{result.department}}</strong></span>
+                                        <span style="float:right" class="green">
+                                            <i class="fa fa-eye"></i> View Details
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,6 +170,7 @@
         integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="page_data.js"></script>
     <script src="common_medical_services.js"></script>
     <script src="search_results.js"></script>
 </body>

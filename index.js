@@ -5,7 +5,8 @@ $(function () {
         data(){
             return {
                 common_medical_services: common_medical_services,
-                query: ""
+                query: "",
+                menu_links: menu_links
             }
         },
         methods: {
