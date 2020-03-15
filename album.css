@@ -161,3 +161,16 @@
     color: #3a7e35;
     margin-bottom: 5px;
 }
+
+.bg-hospital-mulago{
+  background-image: url("images/MulagoHospital703422-703x422.jpg");
+  background-size: cover;
+}
+
+.hospital-banner{
+  height: 300px;
+}
+
+.immunization-image{
+  width: 100%;
+}
