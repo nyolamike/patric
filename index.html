@@ -18,13 +18,6 @@
     <script src="https://kit.fontawesome.com/f83123bd4b.js" crossorigin="anonymous"></script>
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
 
 
@@ -82,6 +75,10 @@
                     
                       <span class="navbar-text">
                         <a class="nav-item active" href="index.html">
+                            <i class="fa fa-home"></i>
+                            Home 
+                        </a>
+                        <a class="nav-item" href="search.html">
                             <i class="fa fa-search-plus"></i>
                             Search & Find 
                         </a>
@@ -95,60 +92,115 @@
 
         <main role="main">
             
-            <section class="jumbotron text-center pt-2 pb-2">
-                <div class="container">
-                    <br/><br/><br/>
-                    <h4>Quickly Find Medical Services.</h4>
-                    <p class="lead text-muted">
-                        Search for medical services, special clinics and price information.
-                    </p>
-                    <p>
-                        <div class="input-group mb-3">
-                            <input type="text" v-model="query" class="form-control" placeholder="enter service name, medication etc ..."
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append ">
-                                <button class="input-group-button btn btn-success " @click="search">
-                                    <i class="fas fa-search fa-fw fa-sm top-margin-4"></i> search
-                                </button>
-                            </div>
-                        </div>
+            <section class="jumbotron text-center pt-2 pb-2 bg-img-1">
+                <div class="container ">
+                    <br/><br/><br/><br/>
+                    <h4>Welcome to the national medical information portal.</h4>
+                    <p class="lead text-muted cool-text">
+                        Here you find quality uptodate information regarding the medical services offered accross the national hospitals
                     </p>
                     <br/>
                 </div>
                 
             </section>
             
-            <div class="album py-5 bg-light">
-                <div class="container">
-                    <div class="text-center"> <h5> A list of Government Medical Services</h5> <br/></div>
+            <div class="album py-1 bg-light">
+                <div class="container padding">
+                    <br/>
+                    <div class="text-center"> <h5> Select a hospital from below or 
+                        <a href="/search.html" class="green-link"> click here to search <i class="fa fa-search"></i></a>
+                    </h5> <br/>
                     <div class="row">
-                        <div class="col-md-4" v-for="medical_service in common_medical_services" >
-                            <div class="card mb-4 shadow-sm">
-                                <div class="card-header bg-success text-white">
-                                    <b>{{medical_service.name}}</b>
-                                </div>
-                                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                    focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
-                                        fill="#eceeef" dy=".3em">Thumbnail</text>
-                                </svg> -->
-                                <img :src="medical_service.image" class="medical-service-image">
-                                <div class="card-body">
-                                    <p class="card-text medical-service-description-box ">{{medical_service.description}}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-success">Find Service Offering</button>
-                                            <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                        </div>
-                                        <small class="text-muted">{{medical_service.annotation}}</small>
-                                    </div>
-                                </div>
+                        <div class="col-md-6 index-hospital-col" @click="gotohospital(hospital)" v-for="hospital in page_data.hospitals" >
+                            <div class="index-hospital-div">
+                                <img :src="'images/'+hospital.image">
+                                <div class="name">{{hospital.index_tile_name}}</div>
                             </div>
                         </div>
-                        
                     </div>
+                </div>
+            </div>
+
+            <div class="album py-1 bg-white">
+                <div class="container text-center  padding">
+                    <br/><br/>
+                    <p class="lead text-muted">
+                        Information you can find in this website application portal 
+                    </p>
+                    <br/><br/>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <i class="fa fa-calendar-plus services-icon"></i>
+                            <h4>Special Clinics</h4>
+                            <p class="lead text-muted cool-text text-left">
+                                Hospitals arrange clinics that operate on specific diseases, these clinics 
+                                have specific days of the week and time.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa fa-clinic-medical  services-icon"></i>
+                            <h4>Hospital Departments</h4>
+                            <p class="lead text-muted cool-text text-left">
+                                Get to know the information about the different departments in the hospitals.
+                                In this way you will be able to know where to find a particular service and how 
+                                to get there.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa fa-money  services-icon"></i>
+                            <h4>Service Costs</h4>
+                            <p class="lead text-muted cool-text text-left">
+                                Be informed of the cost implications of the services offered, there 
+                                are several free services and some services require you to deposit some 
+                                money
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa fa-comment-medical  services-icon"></i>
+                            <h4>Help and Care</h4>
+                            <p class="lead text-muted cool-text text-left">
+                                We are available 24/7 to assist you in finding the information you want.
+                                Our customer care service is friendly and very delighted to communicate with 
+                                you.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa fa-user-md services-icon"></i>
+                            <h4>Search By Symptoms</h4>
+                            <p class="lead text-muted cool-text text-left">
+                                You can search by a symptom that you have to find the medical service that you 
+                                may need and how to acquire that service.
+                                
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa fa-map  services-icon"></i>
+                            <h4>Location Information</h4>
+                            <p class="lead text-muted cool-text text-left">
+                                We have included maps that show where to find these hospitals and 
+                                and services, so that you can quickly find your way.
+
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa fa-x-ray  services-icon"></i>
+                            <h4>Service Procedures</h4>
+                            <p class="lead text-muted cool-text text-left">
+                                For example, we list down the laboratory procedures of the 
+                                different hospitals. These are steps on how a service gets delivered to a patient 
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa fa-procedures  services-icon"></i>
+                            <h4>Hospital Wards</h4>
+                            <p class="lead text-muted cool-text text-left">
+                                The database also includes a listing of several hospital wards 
+                                Wards are rooms were special medical services are given usually
+                                to indoor patients.
+                            </p>
+                        </div>
+                    </div>
+                    <br/><br/>
                 </div>
             </div>
 
@@ -178,6 +230,10 @@
     <script src="page_data.js"></script>
     <script src="common_medical_services.js"></script>
     <script src="index.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script src="tawk.js"></script>
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>

@@ -6,7 +6,8 @@ $(function () {
             return {
                 common_medical_services: common_medical_services,
                 query: "",
-                menu_links: menu_links
+                menu_links: menu_links,
+                page_data: page_data
             }
         },
         methods: {
@@ -19,6 +20,9 @@ $(function () {
                     // alert(path);
                     // window.location.assign(path);
                 }
+            },
+            gotohospital(hospital){
+                window.location = hospital.url;
             }
         }
     })

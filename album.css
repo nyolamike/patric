@@ -72,11 +72,11 @@
 
 .nav-item{
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   cursor: pointer;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
   text-decoration: none;
   color: #dabb9a !important;
 }
@@ -113,4 +113,51 @@
 
 .mb-0{
   margin-bottom: 0px;
+}
+
+.bg-img-1{
+  background-image: url('images/index\ bg2.jpg');
+  background-size: cover;
+}
+
+.cool-text{
+  color: #0e1f0d!important;
+  text-shadow: 3px 2px 4px #ffffff;
+}
+
+.green-link{
+  color: #0c5f06;
+}
+
+.index-hospital-col{
+  /* background-color: red; */
+}
+
+.index-hospital-div{
+  padding: 10px;
+  cursor: pointer;
+  border: 1px dashed #cdefb8;
+  margin-bottom: 30px;
+}
+
+.index-hospital-div img{
+  width: 100%;
+  height: 250px;
+}
+
+.index-hospital-div .name{
+  background-color: #3a7e35;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.services-icon{
+  font-size: 60px;
+    color: #3a7e35;
+    margin-bottom: 5px;
 }
