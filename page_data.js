@@ -43,7 +43,146 @@ page_data = {
                 "Root canal therapy 50,000- 200,000",
                 "Periodontal treatment scale and polish 50,000",
                 "Orthodontics-250,000-750,000"
-            ]
+            ],
+            dental_procedure: {
+                name: "Dental laboratory procedures ",
+                items:[{
+                    num: "1",
+                    procedure: "Dentures",
+                    service: "One tooth acrylic denture",
+                    price: "70,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Each additional tooth ",
+                    price: "20,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Full denture ",
+                    price: "300,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Simple Obturator  ",
+                    price: "100,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Denture repair  ",
+                    price: "20,000 ugx"
+                },{
+                    num: "2",
+                    procedure: "Crown and bridge ",
+                    service: "Acyclic Jacket crown ",
+                    price: "200,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Porcelain Jacket Crown",
+                    price: "300,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Acrylic bridge per (per point)",
+                    price: "200,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Porcelain fused with metal bridge (per point)",
+                    price: "300,000 ugx"
+                },{
+                    num: "3",
+                    procedure: "DENTAL XRAY",
+                    service: "Periapical ",
+                    price: "5,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Occlusal/ bite wing",
+                    price: "10,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Panorex (OPG) wing",
+                    price: "20,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Panorex (OPG) wing",
+                    price: "20,000 ugx"
+                },{
+                    num: "4",
+                    procedure: "Fracture fixation",
+                    service: "Splitting of teeth",
+                    price: "50,000 ugx"
+                }]
+            },
+            dental_procedure_local_anesthesia: {
+                name: "ORAL SURGERY PROCEDURES (under local anesthesia)",
+                items:[{
+                    num: "1",
+                    procedure: "Fracture fixation",
+                    service: "Splitting of teeth",
+                    price: "50,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Simple facial fracture fixation ",
+                    price: "100,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Difficult facial fracture fixation ",
+                    price: "150,000 ugx"
+                },{
+                    num: "2",
+                    procedure: "Minor surgical procedures",
+                    service: "Incision and drainage ",
+                    price: "50,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Incision biopsy",
+                    price: "50,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Aspiration",
+                    price: "50,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Minor surgical toilet suture",
+                    price: "50,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Management of oral hemorrhage",
+                    price: "20,000 ugx"
+                },{
+                    num: "3",
+                    procedure: "Intermediary surgical procedures",
+                    service: "Complicated management of oral hemorrhage",
+                    price: "50,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Enucleation of cyst",
+                    price: "1,000,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Excision of soft tissue mass ",
+                    price: "1,000,000 ugx"
+                },{
+                    num: "",
+                    procedure: "",
+                    service: "Excision of bonny lesions",
+                    price: "1,000,000 ugx"
+                }]
+            }
+            
         }
     },
     {
