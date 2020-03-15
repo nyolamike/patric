@@ -237,7 +237,7 @@
                                 <br /><br />
                                 {{hospital.dental_clinic.dental_procedure_local_anesthesia.name}}
                             </div>
-                            <table class="table table-stripped">
+                            <table class="table table-stripped" v-if="hospital.dental_clinic.dental_procedure_local_anesthesia">
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -260,8 +260,140 @@
                     </div>
                 </div>
 
+                <div class="albumx py-1 bg-white" v-if="hospital.laboratory_services">
+                    <div class="container padding">
+                        <br />
+                        <div class="text-left">
+                            <h5> <i class="fa fa-microscope green"></i> {{hospital.laboratory_services.name}}</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" v-html="hospital.laboratory_services.description"></div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="row" v-for="item in hospital.laboratory_services.items">
+                            <div class="col-md-4" >
+                                <br />
+                                <img :src="item.image" class="immunization-image">
+                            </div>
+                            <div class="col-md-8" >
+                                <br />
+                                <h4>{{item.name}}</h4>
+                                <p class="" v-html="item.description"></p>
+                                <ul v-if="item.list_items">
+                                    <li v-for="service in item.list_items">
+                                        {{(typeof service == 'string'? service : service.name )}}
+                                        <ul v-if="typeof service != 'string'">
+                                            <li v-for="inner_service in service.list_items">
+                                                {{inner_service}}
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="row" v-if="item.list_items_mixed">
+                                    <div class="col-md-6"  v-for="service in item.list_items_mixed">
+                                        <b>{{(typeof service == 'string'? service : service.name )}}</b>
+                                        <ul v-if="typeof service != 'string'">
+                                            <li v-for="inner_service in service.list_items">
+                                                {{inner_service}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr v-if="item.list_items_sold" />
+                                <p class="" v-if="item.list_items_sold">
+                                    Tests that are offered at a fee are: 
+                                </p>
+                                <div class="row" v-if="item.list_items_sold">
+                                    <div class="col-md-6"  v-for="service in item.list_items_sold">
+                                        <b>{{(typeof service == 'string'? service : service.name )}}</b>
+                                        <ul v-if="typeof service != 'string'">
+                                            <li v-for="inner_service in service.list_items">
+                                                {{inner_service}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12" ><hr/> </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
 
-
+                <div class="albumx py-1 bg-light" v-if="hospital.dental_clinic">
+                    <div class="container padding">
+                        <br />
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.dental_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.dental_clinic.image" class="immunization-image">
+                            </div>
+                            <div class="col-md-7">
+                                <div v-html="hospital.dental_clinic.description"></div>
+                                <div v-if="hospital.dental_clinic.services_list_heading">
+                                    <br/>
+                                    {{hospital.dental_clinic.services_list_heading}}
+                                    <br />
+                                    <ul>
+                                        <li v-for="service in hospital.dental_clinic.services_list">
+                                            {{service}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row" v-if="hospital.dental_clinic.dental_procedure">
+                            <div class="col-md-12 text-center">
+                                {{hospital.dental_clinic.dental_procedure.name}}
+                            </div>
+                            <table class="table table-stripped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>procedure</th>
+                                        <th>services</th>
+                                        <th>price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="item in hospital.dental_clinic.dental_procedure.items">
+                                        <td>{{item.num}}</td>
+                                        <td>{{item.procedure}}</td>
+                                        <td>{{item.service}}</td>
+                                        <td class="text-right">{{item.price}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-md-12 text-center" v-if="hospital.dental_clinic.dental_procedure_local_anesthesia">
+                                <br /><br />
+                                {{hospital.dental_clinic.dental_procedure_local_anesthesia.name}}
+                            </div>
+                            <table class="table table-stripped" v-if="hospital.dental_clinic.dental_procedure_local_anesthesia">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>procedure</th>
+                                        <th>services</th>
+                                        <th>price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="item in hospital.dental_clinic.dental_procedure_local_anesthesia.items">
+                                        <td>{{item.num}}</td>
+                                        <td>{{item.procedure}}</td>
+                                        <td>{{item.service}}</td>
+                                        <td class="text-right">{{item.price}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
 
         </main>
 

@@ -181,7 +181,164 @@ page_data = {
                     service: "Excision of bonny lesions",
                     price: "1,000,000 ugx"
                 }]
-            }
+            }  
+        },
+        laboratory_services: {
+            name: "Mulago Laboratory Services",
+            items:[{
+                name: "Hematology Laboratory",
+                image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+                description: "This is located near the causality department at the Old Mulago Hill, Building 4. The laboratory offers a number of services and these are below; <br/> The tests are free of charge and they are below;",
+                list_items: [
+                    "Complete blood test",
+                    "Peripheral blood smear",
+                    "Reticulocyte count",
+                    "Slide sickling test",
+                    "Coagulation screening tests",
+                    "ESR",
+                    "Prothrombin time",
+                    "INR",
+                    "APTT"
+                ]
+            },{
+                name: "Biochemistry Laboratory",
+                image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+                description: "This is located near the causality department at the Old Mulago Hill, Building 4. The free tests offered are",
+                list_items_mixed: [
+                    "Blood glucose",
+                    {
+                        name: "Renal function tests",
+                        list_items: [
+                            "Serum electrolytes (Na+, K, Lithium, Cl, HC02)",
+                            "Creatinine",
+                            "Urea"
+                        ]
+                    },
+                    {
+                        name: "Liver function Tests",
+                        list_items: [
+                            "Serum Albumin",
+                            "Total protein",
+                            "ALT",
+                            "AST",
+                            "ALK phosphatase",
+                            "GGT",
+                            "Serum Total Bilirubin",
+                            "Direct Bilirubin"
+                        ]
+                    },
+                    {
+                        name: "Lipid Profile",
+                        list_items: [
+                            "Cholesterol",
+                            "HDL- cholesterol",
+                            "LDH- cholesterol",
+                            "Triglycerides"
+                        ]
+                    },
+                    {
+                        name: "Cardiac profile",
+                        list_items: [
+                            "CK",
+                            "CK-MB",
+                            "LDH",
+                            "AST",
+                            "Troponin"
+                        ]
+                    },
+                    {
+                        name: "Bone profile",
+                        list_items: [
+                            "Calcium",
+                            "Inorganic phosphate",
+                            "ALP",
+                            "Magnesium"
+                        ]
+                    },
+                    {
+                        name: "Pancreatic",
+                        list_items: [
+                            "Serum amylase",
+                            "Lipase"
+                        ]
+                    },
+                    {
+                        name: "Pancreatic",
+                        list_items: [
+                            "Serum amylase",
+                            "Lipase"
+                        ]
+                    }
+                ],
+                list_items_sold:[
+                    {
+                        name: "Tumor markers at 20,000 shs per test",
+                        list_items: [
+                            "Free PSA",
+                            "Total PSA",
+                            "AFP (Alpha feto protein)",
+                            "CEA",
+                            "CA 125"
+                        ]
+                    },
+                    {
+                        name: "Thyroid Function Tests (TFTs) at 20,000 shs per test",
+                        list_items: [
+                            "TSH",
+                            "T4 Total & Free",
+                            "T3 Total & Free"
+                        ]
+                    },
+                    {
+                        name: "Fertility/ reproductive Hormones at 20,000 shs per test",
+                        list_items: [
+                            "FSH",
+                            "LH",
+                            "Prolactin",
+                            "Estradiol",
+                            "Progesterone",
+                            "Testosterone",
+                            "HCG"
+                        ]
+                    },
+                    {
+                        name: "Other tests at 20,000 shs per test are",
+                        list_items: [
+                            "Serum folate",
+                            "Vitamin B12",
+                            "HBsAg",
+                            "Toxo IgM",
+                            "Toxo IgG",
+                            "Anti-HBC IgM",
+                            "Anti- HAV IgM",
+                            "Anti-HAV",
+                            "PTH",
+                            "ACTH",
+                            "Troponin",
+                            "Cortisol AM/PM"
+                        ]
+                    }
+                ]
+            },{
+                name: "Microbiology lab",
+                image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+                description: "The Laboratory is located at the Old Mulago hill near ward7 just before TASO. It offers a range of services and are free of charge. <br/> The tests are below.",
+                list_items: [
+                    "CSF analysis (Macroscopy, cell count, sugar estimation, protein estimation, India ink wet mount, Gram stain, Latex meningitis test, Leishman, Zn stain, culture, culture and antimicrobial susceptibility.",
+                    "Urinalysis: protein and sugar estimation, urine deposit microscopy, culture and antimicrobial susceptibility testing.",
+                    "Stool examination: Microscopy, macroscopy, concertation method, modified ZN, culture and antimicrobial susceptibility testing.",
+                    "Blood examination for hemoparasites.",
+                    "Examination of skin snips for onchocerciasis.",
+                    "Sputum examination: Macroscopy, wet preparation, Gram stain, Zn stain, Auramine O stain, GeneXpert.",
+                    "Semen analysis: Complete analysis",
+                    "Swab examination: Macroscopy, wet preparation, Gram stain, Zn stain, Leishman, culture and antimicrobial susceptibility testing.",
+                    "Analysis for other body fluids: Macroscopy, Gram stain, Zn stain, Leishman, culture and antimicrobial susceptibility testing.",
+                    "Serology: ASOT, latex, VDRL/RPR, TPHA, BAT",
+                    "Blood culture: Pediatrics and adults."
+                ]
+            }] 
+        },
+        ent_clinic:{
             
         }
     },
