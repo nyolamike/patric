@@ -31,7 +31,11 @@ $(function () {
         },
         created(){
             var items = window.location.pathname.split("/");
-            var page_name = items[items.length - 1] + ".html";
+            var item = items[items.length - 1];
+            if(item.indexOf(".html") == -1){
+                item = item + ".html";
+            }
+            var page_name =  item;
             var index = page_data_reference[page_name];
             var page_object = page_data.hospitals[index];
             this.hospital = page_object;
