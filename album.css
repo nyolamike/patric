@@ -108,7 +108,7 @@
 }
 
 .search-body{
-  height: 75px;
+  min-height: 75px;
 }
 
 .mb-0{
@@ -174,3 +174,5 @@
 .immunization-image{
   width: 100%;
 }
+
+.highlight { background-color: yellow }

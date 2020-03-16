@@ -92,7 +92,7 @@
         </header>
 
         <main role="main">
-
+            
             <section :class="'jumbotron text-center pt-2 pb-2 bg-hospital-' + hospital.bg_name">
                 <div class="container hospital-banner">
                     <br /><br /><br /><br />
@@ -117,9 +117,10 @@
                     </div>
                 </div>
 
-                <div class="album py-1 bg-white">
+                <div class="album py-1 bg-white" v-if="hospital.location">
                     <div class="container padding">
                         <br />
+                        <a :name="hospital.location.search_anchor"></a>
                         <div class="text-left">
                             <h5> <i class="fa fa-map green"></i>
                                 Location and Map</h5> <br />
@@ -403,6 +404,7 @@
                 </div>
 
                 <div class="albumx py-1 bg-white" v-if="hospital.tuber_clinic">
+                    <a :name="hospital.search_anchor"></a>
                     <div class="container padding">
                         <br />
                         <div class="text-left">

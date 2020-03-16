@@ -101,7 +101,7 @@
                             <input type="text" v-model="query" class="form-control" placeholder="enter service name, medication etc ..."
                                 aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div class="input-group-append ">
-                                <button class="input-group-button btn btn-success ">
+                                <button class="input-group-button btn btn-success " @click="search">
                                     <i class="fas fa-search fa-fw fa-sm top-margin-4"></i> search
                                 </button>
                             </div>
@@ -123,21 +123,19 @@
                     <div v-if="results.length == 1" class="text-center"> <h5> We found over {{results.length}} result for your search</h5> <br/></div>
                     <div v-if="results.length > 1" class="text-center"> <h5> We found over {{results.length}} results for your search</h5> <br/></div>
                     <div class="row">
-                        <div class="col-md-12" >
-                            <div class="row search-result-row" v-for="result in results" @click="gotoresult(result)">
+                        <div class="col-md-12" id="search_results_body">
+                            <div class="row search-result-row" v-for="result in results" >
                                 <div class="col-md-3 col-sm-12" >
                                     <img :src="result.image" class="search-service-image">
                                 </div>
                                 <div class="col-md-9 col-sm-12" >
                                     <b><h4>{{result.title}}</h4></b>
-                                    <p class="search-body">
-                                        {{result.body}}
-                                    </p>
+                                    <p class="search-body" v-html="result.body"></p>
                                     <p class="mb-0">
                                         Hospital: <span class="green"><strong>{{result.hospital}}</strong></span>
                                         &nbsp;&nbsp;&nbsp;
-                                        Department: <span class="green"><strong>{{result.department}}</strong></span>
-                                        <span style="float:right" class="green">
+                                        <!-- Department: <span class="green"><strong>{{result.department}}</strong></span> -->
+                                        <span style="float:right" class="green" @click="gotoresult(result)">
                                             <i class="fa fa-eye"></i> View Details
                                         </span>
                                     </p>
@@ -165,6 +163,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
+    <!-- https://www.itsolutionstuff.com/post/jquery-highlight-search-text-in-div-using-highlight-js-with-exampleexample.html -->
+    <script type="text/javascript" src="http://johannburkard.de/resources/Johann/jquery.highlight-5.js"></script>
     <script>window.jQuery || document.write('<script src="jquery.slim.min.js"><\/script>')</script>
     <script src="/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
