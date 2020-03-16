@@ -321,75 +321,120 @@
                     </div>
                 </div>
 
-                <div class="albumx py-1 bg-light" v-if="hospital.dental_clinic">
+                <div class="albumx py-1 bg-light" v-if="hospital.ent_clinic">
                     <div class="container padding">
                         <br />
                         <div class="text-left">
-                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.dental_clinic.name}}</h5>
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.ent_clinic.name}}</h5>
                         </div>
                         <br />
                         <div class="row">
                             <div class="col-md-5">
-                                <img :src="hospital.dental_clinic.image" class="immunization-image">
+                                <img :src="hospital.ent_clinic.image" class="immunization-image">
                             </div>
                             <div class="col-md-7">
-                                <div v-html="hospital.dental_clinic.description"></div>
-                                <div v-if="hospital.dental_clinic.services_list_heading">
-                                    <br/>
-                                    {{hospital.dental_clinic.services_list_heading}}
-                                    <br />
-                                    <ul>
-                                        <li v-for="service in hospital.dental_clinic.services_list">
-                                            {{service}}</li>
-                                    </ul>
-                                </div>
+                                <div v-html="hospital.ent_clinic.description"></div>
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-white" v-if="hospital.out_patients_clinic">
+                    <div class="container padding">
+                        <br />
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.out_patients_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.out_patients_clinic.image" class="immunization-image">
+                            </div>
+                            <div class="col-md-7">
+                                <div v-html="hospital.out_patients_clinic.description"></div>
                             </div>
                         </div>
                         <br />
-                        <div class="row" v-if="hospital.dental_clinic.dental_procedure">
-                            <div class="col-md-12 text-center">
-                                {{hospital.dental_clinic.dental_procedure.name}}
+                        <div class="row">
+                            <div class="col-md-12" v-if="hospital.out_patients_clinic.table_schedule">
+                                <p class="text-center" >{{hospital.out_patients_clinic.services_list_heading}}</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Day Of The Week</th>
+                                            <th>Clinics</th>
+                                            <th>Requirements</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="item in hospital.out_patients_clinic.table_schedule">
+                                            <td>{{item.num}}</td>
+                                            <td>{{item.day_of_week}}</td>
+                                            <td>{{item.clinics}}</td>
+                                            <td>{{item.requirements}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <table class="table table-stripped">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>procedure</th>
-                                        <th>services</th>
-                                        <th>price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr v-for="item in hospital.dental_clinic.dental_procedure.items">
-                                        <td>{{item.num}}</td>
-                                        <td>{{item.procedure}}</td>
-                                        <td>{{item.service}}</td>
-                                        <td class="text-right">{{item.price}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="col-md-12 text-center" v-if="hospital.dental_clinic.dental_procedure_local_anesthesia">
-                                <br /><br />
-                                {{hospital.dental_clinic.dental_procedure_local_anesthesia.name}}
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-light" v-if="hospital.sickle_cell_clinic">
+                    <div class="container padding">
+                        <br />
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.sickle_cell_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.sickle_cell_clinic.image" class="immunization-image">
                             </div>
-                            <table class="table table-stripped" v-if="hospital.dental_clinic.dental_procedure_local_anesthesia">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>procedure</th>
-                                        <th>services</th>
-                                        <th>price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr v-for="item in hospital.dental_clinic.dental_procedure_local_anesthesia.items">
-                                        <td>{{item.num}}</td>
-                                        <td>{{item.procedure}}</td>
-                                        <td>{{item.service}}</td>
-                                        <td class="text-right">{{item.price}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="col-md-7">
+                                <div v-html="hospital.sickle_cell_clinic.description"></div>
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-white" v-if="hospital.tuber_clinic">
+                    <div class="container padding">
+                        <br />
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.tuber_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.tuber_clinic.image" class="immunization-image">
+                            </div>
+                            <div class="col-md-7">
+                                <div v-html="hospital.tuber_clinic.description"></div>
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-light" v-if="hospital.wards">
+                    <div class="container padding">
+                        <br />
+                        <div class="text-left">
+                            <h5> <i class="fa fa-procedures green"></i> {{hospital.wards.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li v-for="service in hospital.wards.list">
+                                        {{service}}</li>
+                                </ul>
+                            </div>
                         </div>
                         <br /><br />
                     </div>

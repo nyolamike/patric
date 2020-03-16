@@ -339,7 +339,64 @@ page_data = {
             }] 
         },
         ent_clinic:{
-            
+            name: "Ear Nose & Throat (ENT) Clinic",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "The clinic is located on the Old Mulago Hill next to the dental clinic. <br />It operates every day from Monday to Friday from 8am to 3pm. You may however need to register as early as possible. <br />  The services are all free"
+        },
+        out_patients_clinic: {
+            name: "Medical out Patients Clinic",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "Mulago holds a number of clinics for patients that were treated before and need a follow up. <br/> They come with a discharge form or referral from any health facility including private ones. <br/> The clinics are located on Mulago hill near TASO in the Bbosa building. <br /> ",
+            services_list_heading: "The clinic days are",
+            table_schedule: [{
+                num: "1",
+                day_of_week: "Monday",
+                clinics: "Neurology, orthopedic pediatrics",
+                requirements: ""
+            },{
+                num: "2",
+                day_of_week: "Tuesday",
+                clinics: "Colorectal, Blue-fam, General surgery, ",
+                requirements: ""
+            },{
+                num: "3",
+                day_of_week: "Wednesday",
+                clinics: "Breast , Urology, endocrine, Green fam, arthritis",
+                requirements: ""
+            },{
+                num: "4",
+                day_of_week: "Thursday",
+                clinics: "Cardiothoracic, Red-fam general surgery",
+                requirements: ""
+            },{
+                num: "5",
+                day_of_week: "Friday",
+                clinics: "Spine, Orthopaedic",
+                requirements: ""
+            }]
+        },
+        sickle_cell_clinic: {
+            name: "Sickle cell clinic",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "This clinic is located on the old Mulago and operates from 8am- 5am From Monday to Friday. <br />It receives both confirmed and non-confirmed patients. <br/>The non-confirmed ones are required to undergo a confirmation test (Hb electrophoresis) and is paid for ",
+        },
+        tuber_clinic: {
+            name: "Tuberculosis (TB) Clinic",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "The clinic is located below the Cancer institute and operates from Monday to Friday for new patients. The TB suspects provide sputum samples for laboratory testing. The follow up clinic and drug refills run from Monday to Thursday.",
+        },
+        wards: {
+            name: "Wards in Mulago",
+            list: [
+                "Surgical ward",
+                "TB ward (5&6)",
+                "Cardio thoracic ward (CTS)",
+                "Acute care unit ",
+                "Pediatric wards (15, 16 and Stanfield)",
+                "Mental ward",
+                "Orthopedic ward (ward 7)",
+                "Spine ward"
+            ]
         }
     },
     {
