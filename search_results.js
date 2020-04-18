@@ -107,8 +107,8 @@ $(function () {
                                 title: "Immunization Department  " + hospital.immunization_department.name,
                                 body: (found.length > 0)? "Immunization Service:  " + found : hospital.immunization_department.description,
                                 hospital: hospital.index_tile_name,
-                                department: hospital.immunidzation_department.name,
-                                link: hospital.url  + "#" + hospital.immunidzation_department.search_anchor
+                                department: hospital.immunization_department.name,
+                                link: hospital.url  + "#" + hospital.immunization_department.search_anchor
                             });
                             next_results_index += 1;
                             break;//no need for other params to add the same search results
@@ -374,8 +374,8 @@ $(function () {
                             results.push({
                                 id: next_results_index,
                                 image: hospital.out_patients_clinic.image,
-                                title: "Clinic Schedule:  " + hospital.ent_clinic.name,
-                                body:  (found.length > 0)? found : hospital.ent_clinic.description,
+                                title: "Clinic Schedule:  " + hospital.out_patients_clinic.name,
+                                body:  (found.length > 0)? found : hospital.out_patients_clinic.description,
                                 hospital: hospital.index_tile_name,
                                 department: "",
                                 link: hospital.url  + "#" + hospital.out_patients_clinic.search_anchor
@@ -471,7 +471,14 @@ $(function () {
                     vm.results = results;
                     //Highlight
                     window.setTimeout(()=>{
-                        $('#search_results_body').removeHighlight().highlight(qp);
+                        console.log("Higlight qp ", qp);
+                        var things = qp.split(' ');
+                        var staff = $('#search_results_body').removeHighlight();
+                        for (var index = 0; index < things.length; index++) {
+                            var thing = things[index];
+                            console.log("Highlighting ", thing);
+                            staff.highlight(thing);
+                        }
                     },2000);
                 },500);
             }

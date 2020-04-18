@@ -118,9 +118,9 @@
                 </div>
 
                 <div class="album py-1 bg-white" v-if="hospital.location">
-                    <div class="container padding">
-                        <br />
-                        <a :name="hospital.location.search_anchor"></a>
+                    <div :class="'container padding ' + (hospital.location.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.location.search_anchor"></a><br />
+                        
                         <div class="text-left">
                             <h5> <i class="fa fa-map green"></i>
                                 Location and Map</h5> <br />
@@ -139,8 +139,9 @@
 
 
                 <div class="albumx py-1 bg-light" v-if="hospital.immunization_department">
-                    <div class="container padding">
-                        <br />
+                    <div :class="'container padding ' + (hospital.immunization_department.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.immunization_department.search_anchor"></a><br />
+                        
                         <div class="text-left">
                             <h5> <i class="fa fa-syringe green"></i> {{hospital.immunization_department.name}}</h5>
                         </div>
@@ -169,8 +170,9 @@
                 </div>
 
                 <div class="albumx py-1 bg-white" v-if="hospital.outpatients_clinic">
-                    <div class="container padding">
-                        <br />
+                    <div :class="'container padding ' + (hospital.outpatients_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.outpatients_clinic.search_anchor"></a><br />
+                        
                         <div class="text-left">
                             <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.outpatients_clinic.name}}</h5>
                         </div>
@@ -188,8 +190,9 @@
                 </div>
 
                 <div class="albumx py-1 bg-light" v-if="hospital.dental_clinic">
-                    <div class="container padding">
-                        <br />
+                    <div :class="'container padding ' + (hospital.dental_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.dental_clinic.search_anchor"></a><br />
+                        
                         <div class="text-left">
                             <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.dental_clinic.name}}</h5>
                         </div>
@@ -262,8 +265,9 @@
                 </div>
 
                 <div class="albumx py-1 bg-white" v-if="hospital.laboratory_services">
-                    <div class="container padding">
-                        <br />
+                    <div :class="'container padding ' + (hospital.laboratory_services.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.laboratory_services.search_anchor"></a><br />
+                        
                         <div class="text-left">
                             <h5> <i class="fa fa-microscope green"></i> {{hospital.laboratory_services.name}}</h5>
                         </div>
@@ -322,8 +326,11 @@
                     </div>
                 </div>
 
+                
+                
                 <div class="albumx py-1 bg-light" v-if="hospital.ent_clinic">
-                    <div class="container padding">
+                    <div :class="'container padding ' + (hospital.ent_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.ent_clinic.search_anchor"></a>
                         <br />
                         <div class="text-left">
                             <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.ent_clinic.name}}</h5>
@@ -342,7 +349,8 @@
                 </div>
 
                 <div class="albumx py-1 bg-white" v-if="hospital.out_patients_clinic">
-                    <div class="container padding">
+                    <div :class="'container padding ' + (hospital.out_patients_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.out_patients_clinic.search_anchor"></a>
                         <br />
                         <div class="text-left">
                             <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.out_patients_clinic.name}}</h5>
@@ -385,7 +393,8 @@
                 </div>
 
                 <div class="albumx py-1 bg-light" v-if="hospital.sickle_cell_clinic">
-                    <div class="container padding">
+                    <div :class="'container padding ' + (hospital.sickle_cell_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.sickle_cell_clinic.search_anchor"></a>
                         <br />
                         <div class="text-left">
                             <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.sickle_cell_clinic.name}}</h5>
@@ -405,8 +414,10 @@
 
                 <div class="albumx py-1 bg-white" v-if="hospital.tuber_clinic">
                     <a :name="hospital.search_anchor"></a>
-                    <div class="container padding">
+                    <div :class="'container padding ' + (hospital.tuber_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.tuber_clinic.search_anchor"></a>
                         <br />
+                        
                         <div class="text-left">
                             <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.tuber_clinic.name}}</h5>
                         </div>
@@ -424,8 +435,10 @@
                 </div>
 
                 <div class="albumx py-1 bg-light" v-if="hospital.wards">
-                    <div class="container padding">
+                    <div :class="'container padding ' + (hospital.tuber_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.wards.search_anchor"></a>
                         <br />
+                        
                         <div class="text-left">
                             <h5> <i class="fa fa-procedures green"></i> {{hospital.wards.name}}</h5>
                         </div>

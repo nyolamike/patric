@@ -181,3 +181,13 @@
   width:225px;
   height: 150px;
 }
+
+.search_space{
+  min-width: 100%;
+  min-height: 300px;
+  background-color: red;;
+}
+
+.more_padding{
+  padding-top: 50px;
+}

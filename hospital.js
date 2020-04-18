@@ -11,7 +11,8 @@ $(function () {
                 hospital: {
                     index_tile_name: "",
                     bg_name: ""
-                }
+                },
+                searched_anchor: ''
             }
         },
         methods: {
@@ -39,6 +40,16 @@ $(function () {
             var index = page_data_reference[page_name];
             var page_object = page_data.hospitals[index];
             this.hospital = page_object;
+
+            var this_app = this;
+            setTimeout(function(){
+                //scroll to a named anchor in case there is a search anchor
+                if(location.hash != ""){
+                    location.href = location.hash;
+                    this_app.searched_anchor = location.hash.replace('#','');
+                    console.log("anchors", this_app.searched_anchor);
+                }
+            },5000);
         }
     })
 });
