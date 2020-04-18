@@ -113,7 +113,7 @@
                     <div class="row">
                         <div class="col-md-6 index-hospital-col" @click="gotohospital(hospital)" v-for="hospital in page_data.hospitals" >
                             <div class="index-hospital-div">
-                                <img :src="'images/'+hospital.image">
+                                <img :src="hospital.image">
                                 <div class="name">{{hospital.index_tile_name}}</div>
                             </div>
                         </div>
