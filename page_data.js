@@ -3,7 +3,7 @@ page_data = {
         name: "Mulago",
         bg_name: "mulago",
         url: "mulago.html",
-        image: "MulagoHospital703422-703x422.jpg",
+        image: "images/MulagoHospital703422-703x422.jpg",
         index_tile_name: "Mulago National Hospital",
         description: "Mulago National Referral Hospital, commonly known as Mulago Hospital, is a hospital in Uganda. It is the largest public hospital in the country, with 1,500 beds. In 2014, an average of 80 to 100 babies were delivered daily, in the hospital's three maternity wards.",
         search_anchor: "mulago_top",
@@ -27,12 +27,14 @@ page_data = {
                 "Hepatitis B infection - Hepatitis B (DPT-HepB -Hib)",
                 "H. Influenzae infection - Hib(DPT -HepB -Hib)",
                 "Rota virus"
-            ]
+            ],
+            search_anchor: "search_anchor_immunization_department"
         },
         outpatients_clinic: {
             name: "Mulago Private Outpatient’s Clinic",
             description: "Operates in old Mulago near the causality ward. <br /> It offers a range of services and the public are able to see consultants privately. <br /> They pay a consultation fee of 25,000=. <br /> The patients also pay for diagnostics tests such as X-ray and laboratory depending of the doctor`s requests. <br /> The clinic runs from Monday to Friday and from 8am to 2pm.",
-            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60"
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            search_anchor: "search_anchor_outpatients_clinic"
         },
         dental_clinic: {
             name: "Mulago Dental Clinic",
@@ -183,7 +185,8 @@ page_data = {
                     service: "Excision of bonny lesions",
                     price: "1,000,000 ugx"
                 }]
-            }
+            },
+            search_anchor: "search_anchor_dental_clinic"
         },
         laboratory_services: {
             name: "Mulago Laboratory Services",
@@ -338,12 +341,14 @@ page_data = {
                     "Serology: ASOT, latex, VDRL/RPR, TPHA, BAT",
                     "Blood culture: Pediatrics and adults."
                 ]
-            }]
+            }],
+            search_anchor: "search_anchor_laboratory_services"
         },
         ent_clinic: {
             name: "Ear Nose & Throat (ENT) Clinic",
             image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
-            description: "The clinic is located on the Old Mulago Hill next to the dental clinic. <br />It operates every day from Monday to Friday from 8am to 3pm. You may however need to register as early as possible. <br />  The services are all free"
+            description: "The clinic is located on the Old Mulago Hill next to the dental clinic. <br />It operates every day from Monday to Friday from 8am to 3pm. You may however need to register as early as possible. <br />  The services are all free",
+            search_anchor: "search_anchor_ent_clinic"
         },
         out_patients_clinic: {
             name: "Medical out Patients Clinic",
@@ -375,17 +380,20 @@ page_data = {
                 day_of_week: "Friday",
                 clinics: "Spine, Orthopaedic",
                 requirements: ""
-            }]
+            }],
+            search_anchor: "search_anchor_out_patients_clinic"
         },
         sickle_cell_clinic: {
             name: "Sickle cell clinic",
             image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
             description: "This clinic is located on the old Mulago and operates from 8am- 5am From Monday to Friday. <br />It receives both confirmed and non-confirmed patients. <br/>The non-confirmed ones are required to undergo a confirmation test (Hb electrophoresis) and is paid for ",
+            search_anchor: "search_anchor_sickle_cell_clinic"
         },
         tuber_clinic: {
             name: "Tuberculosis (TB) Clinic",
             image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
             description: "The clinic is located below the Cancer institute and operates from Monday to Friday for new patients. The TB suspects provide sputum samples for laboratory testing. The follow up clinic and drug refills run from Monday to Thursday.",
+            search_anchor: "search_anchor_tuber_clinic"
         },
         wards: {
             name: "Wards in Mulago",
@@ -398,51 +406,53 @@ page_data = {
                 "Mental ward",
                 "Orthopedic ward (ward 7)",
                 "Spine ward"
-            ]
+            ],
+            search_anchor: "search_anchor_wards"
         }
     },
-    {
-        name: "Kiruddu",
-        bg_name: "kiruddu",
-        url: "kiruddu.html",
-        image: "Kiruddu-hospital-e1526463079413.jpeg",
-        index_tile_name: "Kiruddu National Referral Hospital",
-        description: "------------",
-        search_anchor: "kiruddu_top",
-        location: {
-            description: "-----------",
-            map: "-----------",
-            search_anchor: "kiruddu_location",
-        }
-    },
-    {
-        name: "Kawempe",
-        bg_name: "kawempe",
-        url: "kawempe.html",
-        image: "kawempe.jpg",
-        index_tile_name: "Kawempe National Referral Hospital",
-        description: "------------",
-        search_anchor: "kawempe_top",
-        location: {
-            description: "-----------",
-            map: "-----------",
-            search_anchor: "kawempe_location",
-        }
-    },
-    {
-        name: "Mulago Womens Hospital",
-        bg_name: "mulago_women",
-        url: "mulago_womens_hospital.html",
-        image: "Female-Hospital-Mulago.jpg",
-        index_tile_name: "Mulago Womens Hospital",
-        description: "------------",
-        search_anchor: "mulago_women_top",
-        location: {
-            description: "-----------",
-            map: "-----------",
-            search_anchor: "mulago_women_location",
-        }
-    }]
+    // {
+    //     name: "Kiruddu",
+    //     bg_name: "kiruddu",
+    //     url: "kiruddu.html",
+    //     image: "Kiruddu-hospital-e1526463079413.jpeg",
+    //     index_tile_name: "Kiruddu National Referral Hospital",
+    //     description: "------------",
+    //     search_anchor: "kiruddu_top",
+    //     location: {
+    //         description: "-----------",
+    //         map: "-----------",
+    //         search_anchor: "kiruddu_location",
+    //     }
+    // },
+    // {
+    //     name: "Kawempe",
+    //     bg_name: "kawempe",
+    //     url: "kawempe.html",
+    //     image: "kawempe.jpg",
+    //     index_tile_name: "Kawempe National Referral Hospital",
+    //     description: "------------",
+    //     search_anchor: "kawempe_top",
+    //     location: {
+    //         description: "-----------",
+    //         map: "-----------",
+    //         search_anchor: "kawempe_location",
+    //     }
+    // },
+    // {
+    //     name: "Mulago Womens Hospital",
+    //     bg_name: "mulago_women",
+    //     url: "mulago_womens_hospital.html",
+    //     image: "Female-Hospital-Mulago.jpg",
+    //     index_tile_name: "Mulago Womens Hospital",
+    //     description: "------------",
+    //     search_anchor: "mulago_women_top",
+    //     location: {
+    //         description: "-----------",
+    //         map: "-----------",
+    //         search_anchor: "mulago_women_location",
+    //     }
+    // }
+    ]
 };
 
 page_data_reference = {
