@@ -178,13 +178,33 @@
                         </div>
                         <br />
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-3">
                                 <img :src="hospital.outpatients_clinic.image" class="immunization-image">
                             </div>
                             <div class="col-md-7">
                                 <div v-html="hospital.outpatients_clinic.description"></div>
                             </div>
                         </div>
+
+                        <div class="row" v-if="hospital.outpatients_clinic.table">
+                            <div class="col-md-12">
+                                <br/>
+                                <table class="table table-stripped">
+                                    <thead>
+                                        <tr>
+                                            <th v-for="head in hospital.outpatients_clinic.table.headers">{{head}}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="row in hospital.outpatients_clinic.table.rows">
+                                            <td v-for="item in row">{{item}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        
                         <br /><br />
                     </div>
                 </div>
@@ -259,6 +279,104 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-light" v-if="hospital.skin_clinic">
+                    <div :class="'container padding ' + (hospital.skin_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.skin_clinic.search_anchor"></a><br />
+                        
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.skin_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.skin_clinic.image" class="immunization-image">
+                            </div>
+                            <div class="col-md-7">
+                                <div v-html="hospital.skin_clinic.description"></div>
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-light" v-if="hospital.medical_assessment_clinic">
+                    <div :class="'container padding ' + (hospital.medical_assessment_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.medical_assessment_clinic.search_anchor"></a><br />
+                        
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.medical_assessment_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.medical_assessment_clinic.image" class="immunization-image">
+                            </div>
+                            <div class="col-md-7">
+                                <div v-html="hospital.medical_assessment_clinic.description"></div>
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-light" v-if="hospital.physiotherapy_clinic">
+                    <div :class="'container padding ' + (hospital.physiotherapy_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.physiotherapy_clinic.search_anchor"></a><br />
+                        
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.physiotherapy_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.physiotherapy_clinic.image" class="immunization-image">
+                            </div>
+                            <div class="col-md-7">
+                                <div v-html="hospital.physiotherapy_clinic.description"></div>
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-light" v-if="hospital.radiology_clinic">
+                    <div :class="'container padding ' + (hospital.radiology_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.radiology_clinic.search_anchor"></a><br />
+                        
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.radiology_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.radiology_clinic.image" class="immunization-image">
+                            </div>
+                            <div class="col-md-7">
+                                <div v-html="hospital.radiology_clinic.description"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row" v-if="hospital.radiology_clinic.table">
+                            <div class="col-md-12">
+                                <br/>
+                                <table class="table table-stripped">
+                                    <thead>
+                                        <tr>
+                                            <th v-for="head in hospital.radiology_clinic.table.headers">{{head}}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="row in hospital.radiology_clinic.table.rows">
+                                            <td v-for="item in row">{{item}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <br /><br />
                     </div>

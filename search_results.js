@@ -65,7 +65,7 @@ $(function () {
                         }
                     }
                     //location
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0; hospital.location &&p< params.length;p++){
                         var param = params[p];
                         if(hospital.location.description.toLowerCase().indexOf(param) > -1){
                             results.push({
@@ -82,7 +82,7 @@ $(function () {
                         }
                     }
                     //immunization_department
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0; hospital.immunization_department && p< params.length ;p++){
                         var param = params[p];
                         //search through services_lists
                         var found = "";
@@ -93,6 +93,7 @@ $(function () {
                                 break;
                             }
                         }
+
                         var normal_is_true = hospital.immunization_department.name.toLowerCase().indexOf(param) > -1 || 
                         hospital.immunization_department.description.toLowerCase().indexOf(param) > -1 ||
                         hospital.immunization_department.services_list_heading.toLowerCase().indexOf(param) > -1;
@@ -115,7 +116,7 @@ $(function () {
                         }
                     }
                     //outpatients_clinic
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0;hospital.outpatients_clinic && p< params.length;p++){
                         var param = params[p];
 
                         var normal_is_true = hospital.outpatients_clinic.name.toLowerCase().indexOf(param) > -1 ||
@@ -134,18 +135,56 @@ $(function () {
                             next_results_index += 1;
                             break;//no need for other params to add the same search results
                         }
+                        //search the table
+                        if(hospital.outpatients_clinic.table){
+                            var found = false;
+                            for(var td =0; td < hospital.outpatients_clinic.table.headers.length; td++){
+                                var hd = hospital.outpatients_clinic.table.headers[td];
+                                if(hd.toLowerCase().indexOf(param) > -1){
+                                    results.push({
+                                        id: next_results_index,
+                                        image: hospital.outpatients_clinic.image,
+                                        title: "Out Patient's Clinic Table  ",
+                                        body:  hd,
+                                        hospital: hospital.index_tile_name,
+                                        department: "",
+                                        link: hospital.url  + "#" + hospital.outpatients_clinic.search_anchor
+                                    });
+                                    next_results_index += 1;
+                                }
+                            }
+                            for(var td =0; td < hospital.outpatients_clinic.table.rows.length; td++){
+                                var row = hospital.outpatients_clinic.table.rows[td];
+                                console.log("row ", row);
+                                for(var tdrow =0; tdrow < row.length; tdrow++){
+                                    var vl = row[tdrow];
+                                    if(vl.toLowerCase().indexOf(param) > -1){
+                                        results.push({
+                                            id: next_results_index,
+                                            image: hospital.outpatients_clinic.image,
+                                            title: "Out Patient's Clinic Table  ",
+                                            body:  vl,
+                                            hospital: hospital.index_tile_name,
+                                            department: "",
+                                            link: hospital.url  + "#" + hospital.outpatients_clinic.search_anchor
+                                        });
+                                        next_results_index += 1;
+                                    }
+                                }
+                            }
+                        }
                     }
                     //dental clinic
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0;hospital.dental_clinic && p< params.length;p++){
                         var param = params[p];
 
                         var normal_is_true = hospital.dental_clinic.name.toLowerCase().indexOf(param) > -1 ||
                         hospital.dental_clinic.description.toLowerCase().indexOf(param) > -1  ||
-                        hospital.dental_clinic.services_list_heading.toLowerCase().indexOf(param) > -1;
+                        ( hospital.dental_clinic.services_list_heading && hospital.dental_clinic.services_list_heading.toLowerCase().indexOf(param) > -1);
 
                         //search through services_lists
                         var found = "";
-                        for (let index = 0; index < hospital.dental_clinic.services_list.length; index++) {
+                        for (let index = 0; hospital.dental_clinic.services_list && index < hospital.dental_clinic.services_list.length; index++) {
                             var item = hospital.dental_clinic.services_list[index];
                             if(item.toLowerCase().indexOf(param) > -1){
                                 found = item; //no need for other params to add the same search results
@@ -156,11 +195,11 @@ $(function () {
                         //dental procedure
                         if(found.length == 0){
 
-                            if(hospital.dental_clinic.dental_procedure.name.toLowerCase().indexOf(param) > -1){
+                            if(hospital.dental_clinic.dental_procedure && hospital.dental_clinic.dental_procedure.name.toLowerCase().indexOf(param) > -1){
                                 found = hospital.dental_clinic.dental_procedure.name;
                             }
 
-                            for (let index = 0; index < hospital.dental_clinic.dental_procedure.items.length; index++) {
+                            for (let index = 0; hospital.dental_clinic.dental_procedure && index < hospital.dental_clinic.dental_procedure.items.length; index++) {
                                 var item = hospital.dental_clinic.dental_procedure.items[index];
                                 if(item.procedure.toLowerCase().indexOf(param) > -1 ||
                                    item.service.toLowerCase().indexOf(param) > -1
@@ -173,11 +212,11 @@ $(function () {
 
                         if(found.length == 0){
 
-                            if(hospital.dental_clinic.dental_procedure_local_anesthesia.name.toLowerCase().indexOf(param) > -1){
+                            if(hospital.dental_clinic.dental_procedure_local_anesthesia && hospital.dental_clinic.dental_procedure_local_anesthesia.name.toLowerCase().indexOf(param) > -1){
                                 found = hospital.dental_clinic.dental_procedure_local_anesthesia.name;
                             }
 
-                            for (let index = 0; index < hospital.dental_clinic.dental_procedure_local_anesthesia.items.length; index++) {
+                            for (let index = 0; hospital.dental_clinic.dental_procedure_local_anesthesia && index < hospital.dental_clinic.dental_procedure_local_anesthesia.items.length; index++) {
                                 var item = hospital.dental_clinic.dental_procedure_local_anesthesia.items[index];
                                 if(item.procedure.toLowerCase().indexOf(param) > -1 ||
                                    item.service.toLowerCase().indexOf(param) > -1
@@ -202,8 +241,132 @@ $(function () {
                             break;//no need for other params to add the same search results
                         }
                     }
+                    //skin clinic
+                    for(var p=0;hospital.skin_clinic && p< params.length;p++){
+                        var param = params[p];
+
+                        var normal_is_true = hospital.skin_clinic.name.toLowerCase().indexOf(param) > -1 ||
+                        hospital.skin_clinic.description.toLowerCase().indexOf(param) > -1;
+
+                        if( normal_is_true){
+                            results.push({
+                                id: next_results_index,
+                                image: hospital.skin_clinic.image,
+                                title: "Skin Clinic:   " + hospital.skin_clinic.name,
+                                body:  (found.length > 0)? found : hospital.skin_clinic.description,
+                                hospital: hospital.index_tile_name,
+                                department: "Skin",
+                                link: hospital.url  + "#" + hospital.skin_clinic.search_anchor
+                            });
+                            next_results_index += 1;
+                            break;//no need for other params to add the same search results
+                        }
+                    }
+                    //medical_assessment_clinic clinic
+                    for(var p=0;hospital.medical_assessment_clinic && p< params.length;p++){
+                        var param = params[p];
+
+                        var normal_is_true = hospital.medical_assessment_clinic.name.toLowerCase().indexOf(param) > -1 ||
+                        hospital.medical_assessment_clinic.description.toLowerCase().indexOf(param) > -1;
+
+                        if( normal_is_true){
+                            results.push({
+                                id: next_results_index,
+                                image: hospital.medical_assessment_clinic.image,
+                                title: "Skin Clinic:   " + hospital.medical_assessment_clinic.name,
+                                body:  (found.length > 0)? found : hospital.medical_assessment_clinic.description,
+                                hospital: hospital.index_tile_name,
+                                department: "Skin",
+                                link: hospital.url  + "#" + hospital.medical_assessment_clinic.search_anchor
+                            });
+                            next_results_index += 1;
+                            break;//no need for other params to add the same search results
+                        }
+                    }
+                    //physiotherapy_clinic clinic
+                    for(var p=0;hospital.physiotherapy_clinic && p< params.length;p++){
+                        var param = params[p];
+
+                        var normal_is_true = hospital.physiotherapy_clinic.name.toLowerCase().indexOf(param) > -1 ||
+                        hospital.physiotherapy_clinic.description.toLowerCase().indexOf(param) > -1;
+
+                        if( normal_is_true){
+                            results.push({
+                                id: next_results_index,
+                                image: hospital.physiotherapy_clinic.image,
+                                title: "Department " + hospital.physiotherapy_clinic.name,
+                                body:  (found.length > 0)? found : hospital.physiotherapy_clinic.description,
+                                hospital: hospital.index_tile_name,
+                                department: "Physiotherapy",
+                                link: hospital.url  + "#" + hospital.physiotherapy_clinic.search_anchor
+                            });
+                            next_results_index += 1;
+                            break;//no need for other params to add the same search results
+                        }
+                    }
+                    //Radiology clinic
+                    for(var p=0;hospital.radiology_clinic && p< params.length;p++){
+                        var param = params[p];
+
+                        var normal_is_true = hospital.radiology_clinic.name.toLowerCase().indexOf(param) > -1 ||
+                        hospital.radiology_clinic.description.toLowerCase().indexOf(param) > -1;
+
+                        if( normal_is_true){
+                            results.push({
+                                id: next_results_index,
+                                image: hospital.radiology_clinic.image,
+                                title: "Department " + hospital.radiology_clinic.name,
+                                body:   hospital.radiology_clinic.description,
+                                hospital: hospital.index_tile_name,
+                                department: "Radiology",
+                                link: hospital.url  + "#" + hospital.radiology_clinic.search_anchor
+                            });
+                            next_results_index += 1;
+                            break;//no need for other params to add the same search results
+                        }
+                        //through the table
+                        if(hospital.radiology_clinic.table){
+                            for(var tb=0; tb < hospital.radiology_clinic.table.headers.length; tb++){
+                                var th = hospital.radiology_clinic.table.headers[tb];
+                                if(th.toLowerCase().indexOf(param) > -1){
+                                    results.push({
+                                        id: next_results_index,
+                                        image: hospital.radiology_clinic.image,
+                                        title: "Department " + hospital.radiology_clinic.name,
+                                        body:   th,
+                                        hospital: hospital.index_tile_name,
+                                        department: "Radiology",
+                                        link: hospital.url  + "#" + hospital.radiology_clinic.search_anchor
+                                    });
+                                    next_results_index += 1;
+                                    break;
+                                }
+                            }
+
+                            for(var tb=0; tb < hospital.radiology_clinic.table.rows.length; tb++){
+                                var throwx = hospital.radiology_clinic.table.rows[tb];
+                                for(var throw_id =0; throw_id < throwx.length; throw_id++){
+                                    var th = throwx[throw_id];
+                                    if(th.toLowerCase().indexOf(param) > -1){
+                                        results.push({
+                                            id: next_results_index,
+                                            image: hospital.radiology_clinic.image,
+                                            title: "Department " + hospital.radiology_clinic.name,
+                                            body:   th,
+                                            hospital: hospital.index_tile_name,
+                                            department: "Radiology",
+                                            link: hospital.url  + "#" + hospital.radiology_clinic.search_anchor
+                                        });
+                                        next_results_index += 1;
+                                        break;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
                     //laboratory_services
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0;hospital.laboratory_services && p< params.length;p++){
                         var param = params[p];
 
                         var normal_is_true = hospital.laboratory_services.name.toLowerCase().indexOf(param) > -1;
@@ -332,7 +495,7 @@ $(function () {
                         }
                     }
                     //ent_clinic
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0;hospital.ent_clinic && p< params.length;p++){
                         var param = params[p];
 
                         var normal_is_true = hospital.ent_clinic.name.toLowerCase().indexOf(param) > -1 || 
@@ -353,7 +516,7 @@ $(function () {
                         }
                     }
                     //out_patients_clinich
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0;hospital.out_patients_clinic && p< params.length;p++){
                         var param = params[p];
 
                         var normal_is_true = hospital.out_patients_clinic.name.toLowerCase().indexOf(param) > -1 || 
@@ -385,7 +548,7 @@ $(function () {
                         }
                     }
                     //sickle_cell_clinic
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0;hospital.sickle_cell_clinic && p< params.length;p++){
                         var param = params[p];
 
                         var normal_is_true = hospital.sickle_cell_clinic.name.toLowerCase().indexOf(param) > -1 ||
@@ -406,7 +569,7 @@ $(function () {
                         }
                     }
                     //tuber_clinic
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0;hospital.tuber_clinic && p< params.length;p++){
                         var param = params[p];
 
                         var normal_is_true = hospital.tuber_clinic.name.toLowerCase().indexOf(param) > -1 ||
@@ -427,7 +590,7 @@ $(function () {
                         }
                     }
                     //wards
-                    for(var p=0;p< params.length;p++){
+                    for(var p=0;hospital.wards && p< params.length;p++){
                         var param = params[p];
 
                         var normal_is_true = hospital.wards.name.toLowerCase().indexOf(param) > -1;
