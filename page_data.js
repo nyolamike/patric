@@ -697,7 +697,47 @@ page_data = {
             image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
             search_anchor: "search_anchor_outpatients_clinic"
         },
+        burns_clinic: {
+            name: "Kiruddu Burns and Intensive care unit",
+            description: "This is found on level 4 and works on burns and patients that need intensive care",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            search_anchor: "search_anchor_burns_clinic"
+        },
+        wards: {
+            name: "Wards in Kiruddu",
+            list: [
+                "<b>Pulmonology ward: </b> <br/>This ward is found on level 5, <br/>it has patients have that deals with diseases involving the respiratory tract illnesses",
+                "<b>Infectious diseases (ID) ward: </b> <br/>This ward is on level 5, <br/>This has females with infectious diseases such as HIV, hepatitis etc",
+                "<b>Renal ward: </b> <br/>This ward is on level 5, <br/>This ward has patients with kidney disease",
+                "<b>Cardiac Ward: </b><br/>This ward is on level 5, <br/>This ward has patients with heart disease such as hypertension.",
+                "<b>Infectious diseases (ID) ward :</b> <br/>This ward is on level 6, <br/>This has males with infectious diseases such as HIV, hepatitis etc",
+                "<b>Neurology ward :</b> <br/>This ward is on level 6, <br/>This ward has patients with neurological problems",
+                "<b>Gastro-enterology ward :</b> <br/>This ward is on level 6, <br/>This has patients with illnesses of the digestive system",
+                "<b>Private in-patients ward :</b> <br/>This ward is on level 7, <br/>This is a private in-patients ward. The consultation is 25,000= and the admission fee is about 480,000=. Anything additional depends on the tests and procedures carried out"
+            ],
+            search_anchor: "search_anchor_wards"
+        },
+        kidney_clinic: {
+            name: "Kidney Disease Clinic",
+            description: "This is a dialysis unit for patients with kidney disease. The dialysis costs 60,000= per session",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            search_anchor: "search_anchor_kidney_clinic"
+        }
     },
+    {
+        name: "Mulago Womens Hospital",
+        bg_name: "mulago_women",
+        url: "mulago_womens_hospital.html",
+        image: "Female-Hospital-Mulago.jpg",
+        index_tile_name: "Mulago Womens Hospital",
+        description: "------------",
+        search_anchor: "mulago_women_top",
+        location: {
+            description: "-----------",
+            map: "-----------",
+            search_anchor: "mulago_women_location",
+        }
+    }
     // {
     //     name: "Kawempe",
     //     bg_name: "kawempe",
@@ -712,20 +752,7 @@ page_data = {
     //         search_anchor: "kawempe_location",
     //     }
     // },
-    // {
-    //     name: "Mulago Womens Hospital",
-    //     bg_name: "mulago_women",
-    //     url: "mulago_womens_hospital.html",
-    //     image: "Female-Hospital-Mulago.jpg",
-    //     index_tile_name: "Mulago Womens Hospital",
-    //     description: "------------",
-    //     search_anchor: "mulago_women_top",
-    //     location: {
-    //         description: "-----------",
-    //         map: "-----------",
-    //         search_anchor: "mulago_women_location",
-    //     }
-    // }
+    
     ]
 };
 

@@ -626,6 +626,27 @@ $(function () {
                             }
                         }
                     }
+                    //burns_clinic
+                    for(var p=0;hospital.burns_clinic && p< params.length;p++){
+                        var param = params[p];
+
+                        var normal_is_true = hospital.burns_clinic.name.toLowerCase().indexOf(param) > -1 ||
+                        hospital.burns_clinic.description.toLowerCase().indexOf(param) > -1;
+
+                        if( normal_is_true ){
+                            results.push({
+                                id: next_results_index,
+                                image: hospital.image,
+                                title: "Unit: "  + hospital.burns_clinic.name,
+                                body:  hospital.burns_clinic.description,
+                                hospital: hospital.index_tile_name,
+                                department: "",
+                                link: hospital.url  + "#" + hospital.burns_clinic.search_anchor
+                            });
+                            next_results_index += 1;
+                            break;//no need for other params to add the same search results
+                        }
+                    }
                 } 
                 window.setTimeout(()=>{
                     vm.is_searching = false;

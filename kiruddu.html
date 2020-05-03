@@ -82,7 +82,7 @@
                             <i class="fa fa-search-plus"></i>
                             Search & Find
                         </a>
-                        <a :class="'nav-item ' + (menu_link.link.indexOf('mulago.html') > -1 ? ' active ' : ' ')"
+                        <a :class="'nav-item ' + (menu_link.link.indexOf('kiruddu.html') > -1 ? ' active ' : ' ')"
                             v-for="menu_link in menu_links" :href="menu_link.link">{{menu_link.title}}</a>
                     </span>
                 </div>
@@ -553,7 +553,7 @@
                 </div>
 
                 <div class="albumx py-1 bg-light" v-if="hospital.wards">
-                    <div :class="'container padding ' + (hospital.tuber_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                    <div :class="'container padding ' + (hospital.wards.search_anchor == searched_anchor?'more_padding':'')">
                         <a :name="hospital.wards.search_anchor"></a>
                         <br />
                         
@@ -565,8 +565,51 @@
                             <div class="col-md-12">
                                 <ul>
                                     <li v-for="service in hospital.wards.list">
-                                        {{service}}</li>
+                                       <div v-html="service"></div>
+                                    </li>
                                 </ul>
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-white" v-if="hospital.burns_clinic">
+                    <div :class="'container padding ' + (hospital.burns_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.burns_clinic.search_anchor"></a>
+                        <br />
+                        
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.burns_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.burns_clinic.image" class="burns-image">
+                            </div>
+                            <div class="col-md-7">
+                                <div v-html="hospital.burns_clinic.description"></div>
+                            </div>
+                        </div>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <div class="albumx py-1 bg-light" v-if="hospital.kidney_clinic">
+                    <div :class="'container padding ' + (hospital.kidney_clinic.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.kidney_clinic.search_anchor"></a>
+                        <br />
+                        
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.kidney_clinic.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img :src="hospital.kidney_clinic.image" class="burns-image">
+                            </div>
+                            <div class="col-md-7">
+                                <div v-html="hospital.kidney_clinic.description"></div>
                             </div>
                         </div>
                         <br /><br />
