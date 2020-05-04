@@ -808,11 +808,6 @@ page_data = {
                     search_anchor:"search_anchor_service_y_12",
                 },{
                     items:[
-                        "<b>URO GYNAECOLOGY</b>","","","","",""
-                    ],
-                    search_anchor:"search_anchor_service_y_13",
-                },{
-                    items:[
                         "","<b>Minor Procedures</b>","","","",""
                     ],
                     search_anchor:"search_anchor_service_y_14",
@@ -836,6 +831,241 @@ page_data = {
                         "","Colporraphy","900,000","1,050,000","1,125,000","1,350,000"
                     ],
                     search_anchor:"search_anchor_service_y_18",
+                },{
+                    items:[
+                        "","Perineoraphy","900,000","1,050,000","1,125,000","1,350,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_19",
+                },{
+                    items:[
+                        "","<b>Major Procedures</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_20",
+                },{
+                    items:[
+                        "","Hysterectomy (Hysterectomy ,VVF Repair, TOT/TVT, Slin)","2,500,000","5,000,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_21",
+                },{
+                    items:[
+                        "","Complicated (Complete Fistula, Lapararoscopy Implant)","2,500,000","5,200,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_22",
+                },{
+                    items:[
+                        "<b>Gyn Oncology</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_23",
+                },{
+                    items:[
+                        "","<b>Minor Procedures</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_24",
+                },{
+                    items:[
+                        "","Genetic Counselling","150,000","Not available","187,500","225,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_25",
+                },{
+                    items:[
+                        "","Cauterisation","150,000","800,000","187,500","225,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_26",
+                },{
+                    items:[
+                        "","Examination /Biopsy /Staging/Sampling","150,000","1,050,000","187,500","225,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_27",
+                },{
+                    items:[
+                        "","PAP Smear","150,000","250,000","187,500","225,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_28",
+                },{
+                    items:[
+                        "","Colposcopy","150,000","450,000","187,500","225,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_29",
+                },{
+                    items:[
+                        "","Cryotherapy","150,000","450,000","187,500","225,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_30",
+                },{
+                    items:[
+                        "","Leep","150,000","450,000","187,500","225,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_31",
+                },{
+                    items:[
+                        "","INTERMEDIATE PROCEDURES","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_32",
+                },{
+                    items:[
+                        "","Diagnostic Laparoscopy","1,000,000","2,500,000","1,250,000","1,500,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_33",
+                },{
+                    items:[
+                        "","Min lap diagnostic","1,000,000","1,050,000","1,250,000","1,500,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_34",
+                },{
+                    items:[
+                        "","Simple vulvectomy/cauterisation of warts","1,500,000","4,200,000","1,875,000","2,250,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_35",
+                },{
+                    items:[
+                        "","Total abdominal hysterectomy","1,500,000","4,200,000","1,875,000","2,250,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_36",
+                },{
+                    items:[
+                        "","Cold knife conization","1,000,000","1,000,000","1,250,000","1,500,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_37",
+                },{
+                    items:[
+                        "","<b>Major Procedures</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_38",
+                },{
+                    items:[
+                        "","Therapeutic laparascopy","2,500,00","4,200,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_39",
+                },{
+                    items:[
+                        "","Cyto-reduction","2,500,00","4,200,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_40",
+                },{
+                    items:[
+                        "","Colostamy/urinary diversion","2,500,00","5,000,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_41",
+                },{
+                    items:[
+                        "","Radical hyterectomy/LN dissection","2,500,00","5,200,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_42",
+                },{
+                    items:[
+                        "","Pelvic exenteration","2,500,00","5,200,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_43",
+                },{
+                    items:[
+                        "","Radical vulvectomy/LN dissection","2,500,00","5,000,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_44",
+                },{
+                    items:[
+                        "","Vaginectomy","2,500,00","5,200,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_45",
+                },{
+                    items:[
+                        "","Laser ablation","2,500,00","5,200,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_46",
+                },{
+                    items:[
+                        "<b>BENIGN GYNAECOLOGY</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_47",
+                },{
+                    items:[
+                        "","<b>MINOR PROCEDURE</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_48",
+                },{
+                    items:[
+                        "","Dilatation & Currettage","250,000","1,000,000","312,500","375,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_49",
+                },{
+                    items:[
+                        "","Evacuation","250,000","630,000","312,500","375,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_50",
+                },{
+                    items:[
+                        "","Marsupilisation","250,000","840,000","312,500","375,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_52",
+                },{
+                    items:[
+                        "","Perineal/vaginal procedures","250,000","1,000,000","312,500","375,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_53",
+                },{
+                    items:[
+                        "","<b>Intermediate procedures</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_54",
+                },{
+                    items:[
+                        "","Laparotomies","1,500,000","2,500,000","1,875,000","2,250,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_55",
+                },{
+                    items:[
+                        "","Secondary closures","500,000","2,500,000","625,000","750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_56",
+                },{
+                    items:[
+                        "","Hysteroscopy","1,500,000","2,500,000","1,875,000","2,250,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_57",
+                },{
+                    items:[
+                        "","Laparoscopy","1,500,000","2,500,000","1,875,000","2,250,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_58",
+                },{
+                    items:[
+                        "","<b>Major Procedures</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_59",
+                },{
+                    items:[
+                        "","Abdominal surgery","2,500,000","4,2000,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_60",
+                },{
+                    items:[
+                        "","Total abdominal hysterectomy","2,500,000","4,2000,000","3,125,000","3,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_61",
+                },{
+                    items:[
+                        "<b>Maternal Fetal Medicine</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_62",
+                },{
+                    items:[
+                        "","SVD (Normal Delivery)","800,000","1,890,000","1,000,000","1,200,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_63",
+                },{
+                    items:[
+                        "","Caesarean Section (Tubal ligation Additional 200,000/=)","2,000,000","2,300,000","2,500,000","3,000,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_64",
+                },{
+                    items:[
+                        "","Cervical Cerclage","250,000","1,050,000","312,500","375,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_65",
+                },{
+                    items:[
+                        "","Labour with Analgesia","1,600,000","1,680,000","2,000,000","2,400,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_66",
                 }]
             }, 
             search_anchor: "search_anchor_services_table_clinic"
