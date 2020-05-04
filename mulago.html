@@ -616,6 +616,42 @@
                     </div>
                 </div>
 
+                <div class="albumx py-1 bg-white" v-if="hospital.services_table">
+                    <div :class="'container padding ' + (hospital.services_table.search_anchor == searched_anchor?'more_padding':'')">
+                        <a :name="hospital.services_table.search_anchor"></a><br />
+                        
+                        <div class="text-left">
+                            <h5> <i class="fa fa-clinic-medical green"></i> {{hospital.services_table.name}}</h5>
+                        </div>
+                        <br />
+                        <div class="row" v-if="hospital.services_table.table">
+                            <div class="col-md-12">
+                                <br/>
+                                <table class="table table-stripped">
+                                    <thead>
+                                        <tr>
+                                            <th v-for="head in hospital.services_table.table.headers">{{head}}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="row in hospital.services_table.table.rows">
+                                            <td v-for="item in row.items">
+                                                <div v-html="item"></div>
+                                            </td>
+                                            <td style="visibility: hidden;">
+                                                <a :name="row.search_anchor"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        
+                        <br /><br />
+                    </div>
+                </div>
+
         </main>
 
         <footer class="text-muted bg-dark">

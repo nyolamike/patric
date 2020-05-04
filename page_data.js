@@ -736,7 +736,110 @@ page_data = {
             description: "-----------",
             map: "-----------",
             search_anchor: "mulago_women_location",
-        }
+        },
+        services_table: {
+            name: "WOMENS HOSPITAL has several services listed below",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "",
+            services_list_heading: "Prices Table",
+            table: {
+                headers:[
+                    "",
+                    "SERVICE",
+                    "STANDARD (ugx)",
+                    "AVERAGE MARKET RATES (ugx)",
+                    "VIP/Gold",
+                    "VVIP/Platinum"
+                ],
+                rows:[{
+                    items:[
+                        "<b>CONSULTATIONS</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_1",
+                },{
+                    items:[
+                        "<b>OPD</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_2",
+                },{
+                    items:[
+                        "","Consultation Fee-Per visit","50,000","100,000","62,500","75,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_3",
+                },{
+                    items:[
+                        "","Antenatal Package- (Max 8 Visits)-(includes (490,000) baseline lab tests,1 3D/4D & 2 Ordinary ultra sounds, essential drugs for antenatal, immunisation, )","890,000","1,000,000","1,112,500","1,335,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_4",
+                },{
+                    items:[
+                        "","Neonatal followup Per Visit/immunisation","70,000","140,000","87,500","105,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_5",
+                },{
+                    items:[
+                        "<b>INPATIENTS</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_6",
+                },{
+                    items:[
+                        "","Accomodation per day(also includes Food, Utilities, Linen","80,000","220,000","100,000","120,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_7",
+                },{
+                    items:[
+                        "","Nurses/Doctors Care","100,000","105,000","125,000","150,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_8",
+                },{
+                    items:[
+                        "<b>SURGERIES/PROCEDURES</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_9",
+                },{
+                    items:[
+                        "","Pre anaesthetic review/assessment","50,000","60,000","62,500","75,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_10",
+                },{
+                    items:[
+                        "<b>URO GYNAECOLOGY</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_12",
+                },{
+                    items:[
+                        "<b>URO GYNAECOLOGY</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_13",
+                },{
+                    items:[
+                        "","<b>Minor Procedures</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_14",
+                },{
+                    items:[
+                        "","Band Incisions","800,000","1,050,000","1,000,000","1,200,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_15",
+                },{
+                    items:[
+                        "","Examination Under Anaesthesia","800,000","1,050,000","1,000,000","1,200,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_16",
+                },{
+                    items:[
+                        "","<b>Intermediate procedures</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_17",
+                },{
+                    items:[
+                        "","Colporraphy","900,000","1,050,000","1,125,000","1,350,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_18",
+                }]
+            }, 
+            search_anchor: "search_anchor_services_table_clinic"
+        },
     }
     // {
     //     name: "Kawempe",
@@ -759,8 +862,8 @@ page_data = {
 page_data_reference = {
     "mulago.html": 0,
     "kiruddu.html": 1,
-    "kawempe.html": 2,
-    "mulago_womens_hospital.html": 3
+    "mulago_womens_hospital.html": 2,
+    "kawempe.html": 3
 };
 
 menu_links = [];

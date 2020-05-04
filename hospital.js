@@ -38,7 +38,9 @@ $(function () {
             }
             var page_name =  item;
             var index = page_data_reference[page_name];
+            //console.log("index ", index);
             var page_object = page_data.hospitals[index];
+            //console.log("po ", page_object);
             this.hospital = page_object;
 
             var this_app = this;
