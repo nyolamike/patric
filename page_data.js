@@ -1066,6 +1066,198 @@ page_data = {
                         "","Labour with Analgesia","1,600,000","1,680,000","2,000,000","2,400,000"
                     ],
                     search_anchor:"search_anchor_service_y_66",
+                },{
+                    items:[
+                        "<b>Neonatal Services</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_67",
+                },{
+                    items:[
+                        "Neonatal Intensive Care Unit (Ventilation (per day), Continuous Positive Airway Pressure ventilation (per day), Free flow oxygen (per day), Warmth for Preterm baby, Incubator (per day), Radiant Warmer (per day), Monitoring of baby, Phototherapy, Infusions, Syringe pump,"
+                        +"Infusion pump and Procedures, Total Parenteral Nutrition)"
+                        +"depending on the level of care","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_68",
+                },{
+                    items:[
+                        "","Level 1 (Free Flow air)","300,000","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_70",
+                },{
+                    items:[
+                        "","Level 2 (C-PAP)","700,000","930,000","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_71",
+                },{
+                    items:[
+                        "","Level 3 (Ventilation)","1,000,000","2,000,000","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_71",
+                },{
+                    items:[
+                        "<b>Neonatal Surgery</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_72",
+                },{
+                    items:[
+                        "","Intestinal Atresia","3,500,00","","4,375,000","5,250,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_73",
+                },{
+                    items:[
+                        "","Malrotation","4,000,00","","5,000,000","6,000,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_73",
+                },{
+                    items:[
+                        "","Colostomy","2,000,00","","2,500,000","3,000,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_74",
+                },{
+                    items:[
+                        "","Gstroschisis Repair","3,500,00","","4,375,000","5,250,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_75",
+                },{
+                    items:[
+                        "","Tracheo-Oesophageal Fistula Repair","4,500,00","","5,625,000","6,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_76",
+                },{
+                    items:[
+                        "","Congenital Diaphragmatic Hemia","4,500,00","","5,625,000","6,750,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_77",
+                },{
+                    items:[
+                        "","Sacro-Coccygeal Teratoma Excision","3,000,00","","3,750,000","4,500,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_78",
+                },{
+                    items:[
+                        "","Neonatal Herniotomy Bilateral","2,000,00","","2,500,000","3,000,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_79",
+                },{
+                    items:[
+                        "","Neonatal Herniotomy Unilateral","1,500,00","","1,875,000","2,250,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_80",
+                },{
+                    items:[
+                        "<b>Adult Critical Care</b> (Excludes drugs, diagonistics and dialysis)","Level 1 (HDU)","500,000","540,000","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_81",
+                },{
+                    items:[
+                        "","Level 2 (ICU)","1,000,000","1,500,000","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_82",
+                },{
+                    items:[
+                        "<b>Reproductive Medicine</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_83",
+                },{
+                    items:[
+                        "","ART Counselling","40,000","50,000","50,000","60,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_84",
+                },{
+                    items:[
+                        "","In-vitro fertilization","13,000,000","22,000,000","16,250,000","19,500,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_85",
+                },{
+                    items:[
+                        "","Infrauterine Insemination (IUI)","2,190,000","3,700,000","2,737,500","3,285,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_86",
+                },{
+                    items:[
+                        "","Intro-cytoplasmic sperm injection (ICSI)","14,600,000","25,000,000","18,250,000","21,000,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_87",
+                },{
+                    items:[
+                        "","Testicular Sperm Extraction (TESE)","3,650,000","5,000,000","4,562,500","5,475,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_88",
+                },{
+                    items:[
+                        "","Percutaneous Epididymal Sperm Extraction (PESA)","3,650,000","5,000,000","4,562,500","5,475,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_89",
+                },{
+                    items:[
+                        "","Cryo-preservation (Annual fee)","3,000,000","3,700,000","3,750,000","4,500,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_90",
+                },{
+                    items:[
+                        "","Psychotherapy","50,000","50,000","62,500","75,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_91",
+                },{
+                    items:[
+                        "","<b>Laparoscopy</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_93",
+                },{
+                    items:[
+                        "","Diagnostic","3,000,000","3,255,000","3,750,000","4,500,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_94",
+                },{
+                    items:[
+                        "","Therapeutic","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_95",
+                },{
+                    items:[
+                        "","Level 1","7,000,000","7,300,000","8,750,000","10,500,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_96",
+                },{
+                    items:[
+                        "","Level 2","9,125,000","12,000,000","11,406,250","13,687,500"
+                    ],
+                    search_anchor:"search_anchor_service_y_97",
+                },{
+                    items:[
+                        "","Level 3","12,775,000","14,000,000","15,968,750","19,162,500"
+                    ],
+                    search_anchor:"search_anchor_service_y_98",
+                },{
+                    items:[
+                        "","Hysteroscopy","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_99",
+                },{
+                    items:[
+                        "","Diagnostic","3,650,000","4,200,000","4,562,500","5,475,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_100",
+                },{
+                    items:[
+                        "","Therapeutic","5,000,000","7,300,000","6,250,000","7,500,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_101",
+                },{
+                    items:[
+                        "","<b><Permanent Methods</b>","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_102",
+                },{
+                    items:[
+                        "","Laparascopic tubal occlusion","3,650,000","4,200,000","4,562,500","5,475,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_103",
+                },{
+                    items:[
+                        "<b>Physiotherapy</b>","","","","",""
+                    ],
+                    search_anchor:"search_anchor_service_y_104",
                 }]
             }, 
             search_anchor: "search_anchor_services_table_clinic"
