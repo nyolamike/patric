@@ -647,6 +647,63 @@ $(function () {
                             break;//no need for other params to add the same search results
                         }
                     }
+                    //services_table
+                    for(var p=0;hospital.services_table && p< params.length;p++){
+                        var param = params[p];
+
+                        var normal_is_true = hospital.services_table.name.toLowerCase().indexOf(param) > -1 ||
+                        hospital.services_table.description.toLowerCase().indexOf(param) > -1 || 
+                        hospital.services_table.services_list_heading.toLowerCase().indexOf(param) > -1 ;
+
+                        if( normal_is_true ){
+                            results.push({
+                                id: next_results_index,
+                                image: hospital.image,
+                                title: hospital.services_table.name,
+                                body:  hospital.services_table.description,
+                                hospital: hospital.index_tile_name,
+                                department: "",
+                                link: hospital.url  + "#" + hospital.services_table.search_anchor
+                            });
+                            next_results_index += 1;
+                        }
+                        //try to through the table listing
+                        for (var index = 0; index < hospital.services_table.table.headers.length; index++) {
+                            var header = hospital.services_table.table.headers[index];
+                            if(header.toLowerCase().indexOf(param) > -1){
+                                //console.log("pushing param ", param , " at header " ,  header );
+                                results.push({
+                                    id: next_results_index,
+                                    image: hospital.image,
+                                    title: "Services Heading",
+                                    body:  header,
+                                    hospital: hospital.index_tile_name,
+                                    department: "",
+                                    link: hospital.url  + "#" + hospital.services_table.search_anchor
+                                });
+                                next_results_index += 1;
+                            }
+                        }
+                        for (var index = 0; index < hospital.services_table.table.rows.length; index++) {
+                            var row = hospital.services_table.table.rows[index];
+                            for (var item_index = 0; item_index < row.items.length; item_index++) {
+                                var td = row.items[item_index];
+                                if(td.toLowerCase().indexOf(param) > -1){
+                                    //console.log("pushing param ", param , " at td " ,  td );
+                                    results.push({
+                                        id: next_results_index,
+                                        image: hospital.image,
+                                        title: hospital.services_table.table.headers[item_index],
+                                        body:  td,
+                                        hospital: hospital.index_tile_name,
+                                        department: "",
+                                        link: hospital.url  + "#" + "search_anchor_service_y_" + (index - 1) //row.search_anchor
+                                    });
+                                    next_results_index += 1;
+                                }
+                            }
+                        }
+                    }
                 } 
                 window.setTimeout(()=>{
                     vm.is_searching = false;

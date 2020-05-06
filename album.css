@@ -191,3 +191,12 @@
 .more_padding{
   padding-top: 50px;
 }
+
+.more_row_padding{
+  padding-top: 50px;
+}
+
+.more_row_padding td{
+  padding-top: 100px;
+  background-color: rgba(255, 255, 0, 0.212);
+}

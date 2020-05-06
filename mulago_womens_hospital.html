@@ -633,8 +633,8 @@
                                             <th v-for="head in hospital.services_table.table.headers">{{head}}</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr v-for="row in hospital.services_table.table.rows">
+                                    <tbody>]
+                                        <tr v-for="(row,index) in hospital.services_table.table.rows">
                                             <td v-for="item in row.items">
                                                 <div v-html="item"></div>
                                             </td>

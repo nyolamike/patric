@@ -634,7 +634,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="row in hospital.services_table.table.rows">
+                                        <tr v-for="row in hospital.services_table.table.rows"
+                                        :class="(row.search_anchor == searched_anchor?'more_row_padding':'')"
+                                        >
                                             <td v-for="item in row.items">
                                                 <div v-html="item"></div>
                                             </td>

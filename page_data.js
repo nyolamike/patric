@@ -1258,6 +1258,517 @@ page_data = {
                         "<b>Physiotherapy</b>","","","","",""
                     ],
                     search_anchor:"search_anchor_service_y_104",
+                },{
+                    items:[
+                        "","Physical pain relief per session of 30 minutes","100,000","200,000","125,000","150,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_105",
+                },{
+                    items:[
+                        "","Muscle and nerve stimulation session 30min","100,000","200,000","125,000", "150,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_106",
+                },{
+                    items:[
+                        "","Ultrasound therapy session 30min","100,000","200,000","125,000", "150,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_107",
+                },{
+                    items:[
+                        "","Infra-red rays","100,000","200,000","125,000", "150,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_108",
+                },{
+                    items:[
+                        "","Mobilization session 60min","200,000","300,000","250,000", "300,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_109",
+                },{
+                    items:[
+                        "","Short Wave diathermy session 30min","100,000","200,000","125,000", "150,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_110",
+                },{
+                    items:[
+                        "","Muscle strengthening session 60min","200,000","300,000","250,000", "300,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_111",
+                },{
+                    items:[
+                        "<b>Laboratory/Imaging</b>","","","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_112",
+                },{
+                    items:[
+                        "<b>Heamatology laboratory</b>","","","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_113",
+                },{
+                    items:[
+                        "","Test parameters","","","", "Same across packages"
+                    ],
+                    search_anchor:"search_anchor_service_y_114",
+                },{
+                    items:[
+                        "","Aptit","50,000","51,000","50,000", "50,000"
+                    ],
+                    search_anchor:"search_anchor_service_y_115",
+                },{
+                    items:[
+                        "","B-HCG","40,000","50,500","40,000", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_116",
+                },{
+                    items:[
+                        "","Blood culture","80,000","82,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_117",
+                },{
+                    items:[
+                        "","Blood slide(B/S)","20,000","20,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_118",
+                },{
+                    items:[
+                        "","Brucella screening test/titre","25,000","25,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_119",
+                },{
+                    items:[
+                        "","CA2+","25,000","26,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_120",
+                },{
+                    items:[
+                        "","Cadiac enzymes+","100,000","105,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_121",
+                },{
+                    items:[
+                        "","Cancer markers(each)","40,000","60,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_122",
+                },{
+                    items:[
+                        "","CBC","30,000","32,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_123",
+                },{
+                    items:[
+                        "","CD4","50,000","54,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_124",
+                },{
+                    items:[
+                        "<b>Chemistry laboratory</b>","","","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_125",
+                },{
+                    items:[
+                        "","Congo red","35,000","35,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_126",
+                },{
+                    items:[
+                        "","Consumption index (PTI)","200,000","200,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_127",
+                },{
+                    items:[
+                        "","D-dimer","80,000","80,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_128",
+                },{
+                    items:[
+                        "","DNA paternity test","500,000","560,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_129",
+                },{
+                    items:[
+                        "","Electroyletes(each)","20,000","20,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_130",
+                },{
+                    items:[
+                        "","ESR","20,000","20,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_131",
+                },{
+                    items:[
+                        "","Estrogen (E2)","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_132",
+                },{
+                    items:[
+                        "","Ferretin","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_133",
+                },{
+                    items:[
+                        "","Film comment","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_135",
+                },{
+                    items:[
+                        "","Fasting blood sugar(blood glucose)/RBS","20,000","20,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_136",
+                },{
+                    items:[
+                        "","Fasting lipid profile","100,000","100,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_137",
+                },{
+                    items:[
+                        "","Folate","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_138",
+                },{
+                    items:[
+                        "","FSH","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_139",
+                },{
+                    items:[
+                        "","HB-electrophoresis","100,000","120,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_140",
+                },{
+                    items:[
+                        "","Hepatitis B surface antigen/HCV(each)","25,000","26,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_141",
+                },{
+                    items:[
+                        "","HIV screening","25,000","25,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_142",
+                },{
+                    items:[
+                        "","HIV DNA-PCR","200,000","212,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_143",
+                },{
+                    items:[
+                        "","HVS anaylysis","25,000","25,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_145",
+                },{
+                    items:[
+                        "","PT/INR","60,000","62,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_146",
+                },{
+                    items:[
+                        "","LFTS","80,000","92,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_147",
+                },{
+                    items:[
+                        "","LH","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_148",
+                },{
+                    items:[
+                        "","Malaria RDT","20,000","20,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_149",
+                },{
+                    items:[
+                        "","Coomb's test (Direct & Indirect)","70,000","75,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_150",
+                },{
+                    items:[
+                        "","MG2+","25,000","26,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_151",
+                },{
+                    items:[
+                        "","Blood group + Cross Match+","30,000","32,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_152",
+                },{
+                    items:[
+                        "","PM cortisol/AM cortisol(each)","50,000","52,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_153",
+                },{
+                    items:[
+                        "","Progestrone","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_154",
+                },{
+                    items:[
+                        "","Prolactin","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_155",
+                },{
+                    items:[
+                        "","OGIT","80,000","100,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_156",
+                },{
+                    items:[
+                        "","RFTS","80,000","90,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_157",
+                },{
+                    items:[
+                        "","Rhemomatatoid factor","40,000","40,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_158",
+                },{
+                    items:[
+                        "","T3","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_159",
+                },{
+                    items:[
+                        "","Thrombin time","70,000","70,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_160",
+                },{
+                    items:[
+                        "","TSH","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_161",
+                },{
+                    items:[
+                        "","Neutrophil alkaline phosphatase","35,000","35,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_162",
+                },{
+                    items:[
+                        "","Phosphates","25,000","25,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_163",
+                },{
+                    items:[
+                        "","Plasma fibrinogen","100,000","102,500","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_164",
+                },{
+                    items:[
+                        "<b>Microbiology laboratory</b>","","","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_165",
+                },{
+                    items:[
+                        "","Pleural fluid analysis+C/S","70,000","80,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_166",
+                },{
+                    items:[
+                        "","Sputum analysis/ZN/gram(each)","30,000","35,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_167",
+                },{
+                    items:[
+                        "","Stool analysis/microscopy/modified ZN(each)","32,000","22,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_168",
+                },{
+                    items:[
+                        "","TPHA","20,000","20,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_169",
+                },{
+                    items:[
+                        "","Uric acid","20,000","20,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_170",
+                },{
+                    items:[
+                        "","Urinalysis","20,000","20,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_171",
+                },{
+                    items:[
+                        "","Urine HCG","20,000","25,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_172",
+                },{
+                    items:[
+                        "","VDRL","20,000","20,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_173",
+                },{
+                    items:[
+                        "","HBSAg viral load","200,000","200,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_174",
+                },{
+                    items:[
+                        "","HIV viral load","150,000","150,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_175",
+                },{
+                    items:[
+                        "","VIT B12","40,000","40,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_176",
+                },{
+                    items:[
+                        "","Culture & Sensivitivty for all","50,000","50,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_177",
+                },{
+                    items:[
+                        "","Semem analysis","100,000","100,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_178",
+                },{
+                    items:[
+                        "","Toxo(IGM/IGG)","80,000","85,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_179",
+                },{
+                    items:[
+                        "","CMV","100,000","110,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_180",
+                },{
+                    items:[
+                        "","Anti phospho lipid","100,000","100,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_181",
+                },{
+                    items:[
+                        "","Anti glycopeptide","100,000","100,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_182",
+                },{
+                    items:[
+                        "","Executive Checkup (CBC+ESR+Lipid Profile+ RFT+ LFT+ Uric Acid+TPHA+ Blood Sugar+ Stool Analysis+Urine Analysis+ Pancreatic Profile+)"
+                        +"+PSA (50,000) & PAP Smear (100,000)","350,000","360,000","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_183",
+                },{
+                    items:[
+                        "<b>Pathology</b>","","","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_184",
+                },{
+                    items:[
+                        "","Aspiration cytology FNA","100,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_185",
+                },{
+                    items:[
+                        "","Autopsy (post mortem)","150,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_186",
+                },{
+                    items:[
+                        "","Basic histology H&E small sample one to 3slides","80,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_187",
+                },{
+                    items:[
+                        "","Large specimen or complex of 8 and above sides","200,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_189",
+                },{
+                    items:[
+                        "","Body storage","10,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_190",
+                },{
+                    items:[
+                        "","Cleaning and dressing","12,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_191",
+                },{
+                    items:[
+                        "","Embalmment Adult","150,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_192",
+                },{
+                    items:[
+                        "","Embalmment Neonatal","70,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_193",
+                },{
+                    items:[
+                        "","Exfoloative cytology","80,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_194",
+                },{
+                    items:[
+                        "","Frozen section","120,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_195",
+                },{
+                    items:[
+                        "","Immunofluorescence","120,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_196",
+                },{
+                    items:[
+                        "","Immunogenetic HLA Typing","2,000,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_197",
+                },{
+                    items:[
+                        "","Molecular genotyping (cancer)","1,800,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_198",
+                },{
+                    items:[
+                        "","Punch biopsy","100,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_199",
+                },{
+                    items:[
+                        "<b>Radiology</b>","","","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_200",
+                },{
+                    items:[
+                        "","Plain x-ray","30,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_201",
+                },{
+                    items:[
+                        "","Special x-ray examinations","100,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_202",
+                },{
+                    items:[
+                        "","Ultrasound","30,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_203",
+                },{
+                    items:[
+                        "","Special ultrasound","100,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_204",
+                },{
+                    items:[
+                        "","CT scan","180,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_205",
+                },{
+                    items:[
+                        "","Mammagraphy","90,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_206",
+                },{
+                    items:[
+                        "","Interventional radiology","100,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_207",
+                },{
+                    items:[
+                        "","MRI","350,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_208",
+                },{
+                    items:[
+                        "","3D Scan","150,000","","", ""
+                    ],
+                    search_anchor:"search_anchor_service_y_209",
                 }]
             }, 
             search_anchor: "search_anchor_services_table_clinic"
