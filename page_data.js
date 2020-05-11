@@ -728,7 +728,7 @@ page_data = {
         name: "Mulago Womens Hospital",
         bg_name: "mulago_women",
         url: "mulago_womens_hospital.html",
-        image: "Female-Hospital-Mulago.jpg",
+        image: "images/Female-Hospital-Mulago.jpg",
         index_tile_name: "Mulago Womens Hospital",
         description: "------------",
         search_anchor: "mulago_women_top",
@@ -1773,23 +1773,303 @@ page_data = {
             }, 
             search_anchor: "search_anchor_services_table_clinic"
         },
-    }
-    // {
-    //     name: "Kawempe",
-    //     bg_name: "kawempe",
-    //     url: "kawempe.html",
-    //     image: "kawempe.jpg",
-    //     index_tile_name: "Kawempe National Referral Hospital",
-    //     description: "------------",
-    //     search_anchor: "kawempe_top",
-    //     location: {
-    //         description: "-----------",
-    //         map: "-----------",
-    //         search_anchor: "kawempe_location",
-    //     }
-    // },
-    
-    ]
+    },
+    {
+        name: "Kawempe",
+        bg_name: "kawempe",
+        url: "kawempe.html",
+        image: "images/kawempe.jpg",
+        index_tile_name: "Kawempe National Referral Hospital",
+        description: "The hospital is in Kawempe Division, one of the five administrative units of the Kampala Capital City Authority. The services offered are mostly for women and children however they also attend to referrals especially for radiology services",
+        search_anchor: "kawempe_top",
+        location: {
+            description: "It is located approximately 12 kilometres from the city along Kampala-Gulu high way",
+            map: "-----------",
+            search_anchor: "kawempe_location",
+        },
+        outpatients_clinic: {
+            name: "General clinics ",
+            description: "This is found on level 1 <br/> ",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            search_anchor: "search_anchor_outpatients_clinic",
+            table: {
+                headers: ["",""],
+                rows: [
+                    ["Gynaecology ","Monday"],
+                    ["Antenatal ","Tuesday, Wednesday, Thursday"],
+                    ["Urology & Infertility ","Friday"],
+                    ["Oncology ","Monday"],
+                    ["Family planning ","Monday- Friday"],
+                    ["Immunization ","Monday- Friday"],
+                    ["HIV testing and Antiretroviral therapy (ART) ","Monday- Friday"],
+                    ["TB screening and treatment","Monday- Friday"],
+                ]
+            }
+        },
+        laboratory_services: {
+            name: "Kawempe Laboratory Services",
+            items: [{
+                name: "Hematology Laboratory",
+                image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+                description: "Found on level 2",
+                list_items: [
+                    "Hemoglobin estimation",
+                    "Complete blood count (cbc)",
+                    "Film comment",
+                    "Bleeding time",
+                    "Clotting time"
+                ]
+            }, {
+                name: "Other Laboratories",
+                image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+                description: "",
+                list_items_mixed: [
+                    {
+                        name: "Blood transfusion",
+                        list_items: [
+                            "Blood grouping",
+                            "Combs test",
+                            "Cross matching"
+                        ]
+                    },
+                    {
+                        name: "Parasitology",
+                        list_items: [
+                            "Malaria microscopy",
+                            "Malaria Rapid diagnostic test (RDT)",
+                            "Stool microscopy"
+                        ]
+                    },
+                    {
+                        name: "Serology",
+                        list_items: [
+                            "VDRL/RPR",
+                            "TPHA",
+                            "Hepatitis B",
+                            "Brucella",
+                            "Pregnancy test",
+                            "Rheumatoid factor",
+                        ]
+                    },
+                    {
+                        name: "Immunology",
+                        list_items: [
+                            "CD4 count",
+                            "Viral load"
+                        ]
+                    },
+                    {
+                        name: "Microbiology",
+                        list_items: [
+                            "ZN for AFBS",
+                            "GeneXpert for TB",
+                            "CSF analysis",
+                            "Gram stain",
+                            "Urine microscopy",
+                        ]
+                    },
+                    {
+                        name: "Clinical chemistry",
+                        list_items: [
+                            "Lipid profile"
+                        ]
+                    }
+                ]
+            }],
+            search_anchor: "search_anchor_laboratory_services"
+        },
+        out_patients_clinic: {
+            name: "Private outpatient department",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "This is found on level 3, <br/> The Gynaecology clinic runs Monday- Friday and patients pay 25,000 shs per visit/ consultation. <br/> Antenatal clinic and it costs 120,000 shs.",
+            services_list_heading: "",
+            search_anchor: "search_anchor_out_patients_clinic"
+        },
+        tuber_clinic: {
+            name: "Labour Suit",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "Level 4, This level has a labour suite",
+            search_anchor: "search_anchor_tuber_clinic"
+        },
+        sickle_cell_clinic: {
+            name: "Padiatric Ward",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "Level 5, This level has pediatric ward and special care unit for children",
+            search_anchor: "search_anchor_sickle_cell_clinic"
+        },
+        ent_clinic: {
+            name: "Female Adults Wards",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "This is on level 6, <br/> This level has wards for female adults. <br/> The level also provides Post exposure prophylaxis (PEP).   <br/> The private rooms are 50,000 shs and 100,000 shs per day",
+            search_anchor: "search_anchor_ent_clinic"
+        },
+        immunization_department: {
+            name: "Gynne Emergencies",
+            description: "Found on level 7, <br/>This level is for gynae emergencies before 28 weeks of pregnancy.  <br/>For other conditions they stabilize the patients and are then refer to other wards or health facilities e.g. Mulago women`s hospital.",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            services_list_heading: "",
+            services_list: [
+                
+            ],
+            search_anchor: "search_anchor_immunization_department"
+        },
+        skin_clinic: {
+            name: "Pregnant Women Clinic",
+            description: "This is found on level 8 <br/> This level is for pregnant women who are above 28 weeks of pregnancy and before labour. <br/> They receive some referrals from the labour ward",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            search_anchor: "search_anchor_skin_clinic"
+        },
+        services_table: {
+            name: "Kawempe Hospital Radiography Services",
+            image: "https://images.unsplash.com/photo-1575468332949-4bd46064dd66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=225&q=60",
+            description: "",
+            services_list_heading: "Prices Table",
+            table: {
+                headers:[
+                    "",
+                    "SERVICE",
+                    "STANDARD (ugx)"
+                ],
+                rows:[{
+                    items:[
+                        "<b>CT Scan</b>","Chest","150,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_1",
+                },{
+                    items:[
+                        "","Abdomen","150,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_2",
+                },{
+                    items:[
+                        "","Brain","120,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_3",
+                },{
+                    items:[
+                        "","Spine","150,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_4",
+                },{
+                    items:[
+                        "","Limbs","120,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_5",
+                },{
+                    items:[
+                        "","PNS","120,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_6",
+                },{
+                    items:[
+                        "","Orbit","120,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_7",
+                },{
+                    items:[
+                        "<b>X-Ray</b>","","",
+                    ],
+                    search_anchor:"search_anchor_service_y_8",
+                },{
+                    items:[
+                        "","Chest","20,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_9",
+                },{
+                    items:[
+                        "","Limb","20,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_10",
+                },{
+                    items:[
+                        "","Skull","20,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_11",
+                },{
+                    items:[
+                        "<b>Ultra sound</b>","","",
+                    ],
+                    search_anchor:"search_anchor_service_y_12",
+                },{
+                    items:[
+                        "","Abdomen","10,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_13",
+                },{
+                    items:[
+                        "","Pelvis","10,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_14",
+                },{
+                    items:[
+                        "","Musculoskeletal","50,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_15",
+                },{
+                    items:[
+                        "<b>Doppler</b>","Mvenus doppler","70,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_16",
+                },{
+                    items:[
+                        "","Carotid Arterial Doppler","120,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_17",
+                },{
+                    items:[
+                        "","Peripheral Arterial Doppler","120,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_18",
+                },{
+                    items:[
+                        "<b>Special Pro</b>","Biopsies","",
+                    ],
+                    search_anchor:"search_anchor_service_y_19",
+                },{
+                    items:[
+                        "","Barium Meal","130,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_20",
+                },{
+                    items:[
+                        "","Barium Swallow","130,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_21",
+                },{
+                    items:[
+                        "","Barium Enema","200,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_22",
+                },{
+                    items:[
+                        "","Hysterosalpingogram (HSG)","130,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_23",
+                },{
+                    items:[
+                        "","Fistulogram","200,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_24",
+                },{
+                    items:[
+                        "","Intravenous pylogram (IVP)","200,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_25",
+                },{
+                    items:[
+                        "","Sialogram","200,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_26",
+                },{
+                    items:[
+                        "","Cystography (CUG)","150,000",
+                    ],
+                    search_anchor:"search_anchor_service_y_27",
+                }]
+            }, 
+            search_anchor: "search_anchor_services_table_clinic"
+        },
+    }]
 };
 
 page_data_reference = {

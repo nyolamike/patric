@@ -167,6 +167,21 @@
   background-size: cover;
 }
 
+.bg-hospital-kawempe{
+  background-image: url("images/kawempe.jpg");
+  background-size: cover;
+}
+
+.bg-hospital-kiruddu{
+  background-image: url("images/Kiruddu-hospital-e1526463079413.jpg");
+  background-size: cover;
+}
+
+.bg-hospital-mulago_women{
+  background-image: url("images/Female-Hospital-Mulago.jpg");
+  background-size: cover;
+}
+
 .hospital-banner{
   height: 300px;
 }
