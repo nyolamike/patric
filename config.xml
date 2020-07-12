@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.patric.medicalservicedb"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>Medical Services DB</name>
+
+  <description>
+      This is where to find info on medical services
+  </description>
+
+  <author href="https://patric.com" email="patric@gmail.com">
+      Patric
+  </author>
+
+</widget>
