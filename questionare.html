@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Medical Health Care Services DB</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/f83123bd4b.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+
+
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app_wrapper">
+        <header>
+            <!-- <div class="collapsex bg-dark" id="xnavbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            his is it
+                        </div>
+
+                         <div class="col-sm-8 col-md-7 py-4">
+                            <h4 class="text-white">About</h4>
+                            <p class="text-muted">Add some information about the album below, the author, or any other
+                                background context. Make it a few sentences long so folks can pick up some informative
+                                tidbits. Then, link them off to some social networking sites or contact information.</p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4 class="text-white">Contact</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                                <li><a href="#" class="text-white">Email me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="navbar navbar-dark fixed-top bg-dark shadow-sm">
+
+                <div class="container d-flex justify-content-between">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <i class="fa fa-laptop-medical"></i>
+                        <strong>
+                            &nbsp;&nbsp;Medical Services Database
+                        </strong>
+                    </a>
+
+                    <span class="navbar-text">
+                        <a class="nav-item active" href="index.html">
+                            <i class="fa fa-home"></i>
+                            Home
+                        </a>
+                        <a class="nav-item" href="search.html">
+                            <i class="fa fa-search-plus"></i>
+                            Search & Find
+                        </a>
+                        <a class="nav-item" v-for="menu_link in menu_links"
+                            :href="menu_link.link">{{menu_link.title}}</a>
+                    </span>
+                </div>
+
+
+            </div>
+        </header>
+
+        <main role="main">
+
+            <section class="jumbotron text-center pt-2 pb-2 bg-img-1">
+                <div class="container ">
+                    <h4 class="questionare-h4">Help Us Become Better.</h4>
+                </div>
+            </section>
+
+            <div class="album py-1 bg-light">
+                <div class="container padding">
+                    <p class="questionare-title">Evaluation questionnaire for integrated information portal to
+                        facilitate informed decision making for the general public seeking healthcare from <b>MNRH</b>
+                    </p>
+
+                    <div>
+                        The questionnaire gives an opportunity to tell me about the information portal.
+                        Your responses will help me understand what aspects of the application are satisfying and those
+                        that need be improved.
+                        <br /><br />
+                        Please read each statement and indicate how strongly agree or disagree by checking the radio
+                        button on the scale of 1-5 where; <br />
+                        <div><b>1=Strongly disagree; </b></div>
+                        <div><b>2= Disagree; </b></div>
+                        <div><b>3=Neutral; </b></div>
+                        <div><b>4=Agree; </b></div>
+                        <div><b>5=Strongly Agree.</b> </div>
+                        <br />Please indicate the negative and positive aspects of application in the last questions.
+                        <br /><br /> <i><b>Thank you </b></i> for participating in the evaluation of the application.
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div v-for="(question,index) in questions" :key="question.id" class="question">
+                                <div class="question-query"><b>{{index+1}}.)</b>&nbsp;{{question.value}}</div>
+                                <div class="question-options" v-if="question.kind=='radio'">
+                                    <span v-for="answer in question.possible_answers" class="answer-option">
+                                        <input :value="answer.value" v-model="answers[question.code]"
+                                            :name="question.code + '_answer'" type="radio" />
+                                        <span @click="answers[question.code]=answer.value">{{answer.label}}&nbsp;</span>
+                                    </span>
+                                </div>
+                                <div class="question-options" v-if="question.kind=='text'">
+                                    <textarea v-model="answers[question.code]" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button type="button" class="btn btn-success mt-2 mb-2 submit-quetions-btn">
+                                Click Here To Submit Your Answers
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-muted bg-dark">
+            <div class="container">
+                <p class="float-right ">
+                    <a href="#" class="text-white">Back to top</a>
+                </p>
+                <p class="text-white">Medical Health Care Service, is a quick way to get to know the services!</p>
+                <p class="text-white">Offered by government public hospital &copy; 2020 Patric. All rights reserves</p
+                    class="text-white">
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="jquery.slim.min.js"><\/script>')</script>
+    <script src="/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="page_data.js"></script>
+    <script src="common_medical_services.js"></script>
+    <script src="questionare.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script src="tawk.js"></script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
