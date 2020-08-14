@@ -1,4 +1,18 @@
 $(function () {
+    // // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCNtSQa8_a7d8Tt6WhtplMNgxyrfcCqA1I",
+        authDomain: "patric-msd.firebaseapp.com",
+        databaseURL: "https://patric-msd.firebaseio.com",
+        projectId: "patric-msd",
+        storageBucket: "patric-msd.appspot.com",
+        messagingSenderId: "1086663479416",
+        appId: "1:1086663479416:web:504980477ef7ccf8e79d8d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.database();
+
     // alert("Hello there");
     var app = new Vue({
         el: '#app_wrapper',
@@ -306,22 +320,63 @@ $(function () {
                     q11: "",
                     q12: "",
                     q13: ""
-                }
+                },
+                question_errors: {
+                    q1: "",
+                    q2: "",
+                    q3: "",
+                    q4: "",
+                    q5: "",
+                    q6: "",
+                    q7: "",
+                    q8: "",
+                    q9: "",
+                    q10: "",
+                    q11: "",
+                    q12: "",
+                    q13: ""
+                },
+                is_submitting: false
             }
         },
         methods: {
-            search: function(){
-                var query = this.query.trim();
-                if(query.length > 0){
-                    localStorage.setItem("q",query);
-                    var path = "/search_results.html";
-                    window.location = path;
-                    // alert(path);
-                    // window.location.assign(path);
+            save_questionare(){
+
+                //validate
+                var has_errors =false;
+                var now = new Date();
+                var final_data = {
+                    date: now.toString(),
+                    time: now.getTime()
+                };
+                for (var key in this.answers) {
+                    var value = this.answers[key];
+                    this.question_errors[key] = "";
+                    // console.log("qtn :", key, value);
+                    value = value.trim();
+                    if(value.length == 0){
+                        this.question_errors[key] = "Please provide an answer";
+                        has_errors = true;
+                    }
+                    final_data[key] = value;
                 }
-            },
-            gotohospital(hospital){
-                window.location = hospital.url;
+                if(has_errors == true){
+                    alert("Please answer all questions to submit");
+                }
+                // return false;
+                this.is_submitting = true;
+
+                // Get a key for a new Post.
+                var newPostKey = db.ref().child('questionare_v1').push().key;
+                // Write the new post's data simultaneously in the posts list and the user's post list.
+                var updates = {};
+                this.answers
+                updates['/answers/' + newPostKey] = final_data;
+                var res =  db.ref().update(updates);
+                console.log("res ", res);
+                this.is_submitting = false;
+                alert("Thank you for participating");
+                window.location = "/";
             }
         }
     })
