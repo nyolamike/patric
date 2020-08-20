@@ -1,4 +1,5 @@
 $(function () {
+    //https://codemafia.hashnode.dev/adding-firebase-to-your-web-application-ck222jl4r000q19s1v01aliqc?guid=none&deviceId=b51f21ea-2802-4b3e-83a7-8313bd7dabad
     // // Your web app's Firebase configuration
     var firebaseConfig = {
         apiKey: "AIzaSyCNtSQa8_a7d8Tt6WhtplMNgxyrfcCqA1I",
@@ -241,35 +242,10 @@ $(function () {
                         value: "5",
                         label: "5"
                     }]
-                },{
+                },
+                {
                     id: 10,
                     code: "q10",
-                    kind: "radio",
-                    value: "",
-                    possible_answers: [{
-                        id: 21,
-                        value: "1",
-                        label: "1"
-                    },{
-                        id: 22,
-                        value: "2",
-                        label: "2"
-                    },{
-                        id: 23,
-                        value: "3",
-                        label: "3"
-                    },{
-                        id: 24,
-                        value: "4",
-                        label: "4"
-                    },{
-                        id: 25,
-                        value: "5",
-                        label: "5"
-                    }]
-                },{
-                    id: 11,
-                    code: "q11",
                     kind: "radio",
                     value: "Would you recommend the application to some else ?",
                     possible_answers: [{
@@ -294,14 +270,14 @@ $(function () {
                         label: "5"
                     }]
                 },{
-                    id: 12,
-                    code: "q12",
+                    id: 11,
+                    code: "q11",
                     kind: "text",
                     value: "List the most negative aspect(s) about this application",
                     possible_answers: []
                 },{
-                    id: 13,
-                    code: "q13",
+                    id: 12,
+                    code: "q12",
                     kind: "text",
                     value: "List the most positive aspect(s) about this application",
                     possible_answers: []
@@ -318,8 +294,7 @@ $(function () {
                     q9: "",
                     q10: "",
                     q11: "",
-                    q12: "",
-                    q13: ""
+                    q12: ""
                 },
                 question_errors: {
                     q1: "",
@@ -333,8 +308,7 @@ $(function () {
                     q9: "",
                     q10: "",
                     q11: "",
-                    q12: "",
-                    q13: ""
+                    q12: ""
                 },
                 is_submitting: false
             }
